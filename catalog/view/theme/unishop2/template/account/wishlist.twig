@@ -1,0 +1,144 @@
+{{ header }}
+<div id="account-wishlist" class="container">
+	<div class="breadcrumb-h1 {{ menu_expanded ? 'col-md-offset-3 col-lg-offset-3 col-xxl-offset-4' }}">
+		<ul class="breadcrumb mobile">
+			{% for key, breadcrumb in breadcrumbs %}
+				{% if key + 1 < breadcrumbs|length %}
+					<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+				{% else %}
+					{% if not hide_last_breadcrumb or (hide_last_breadcrumb and key == 1) %}<li>{{ breadcrumb.text }}</li>{% endif %}
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+	{% if success %}
+		<div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}
+			<!-- <button type="button" class="close" data-dismiss="alert">&times;</button> -->
+		</div>
+	{% endif %}
+	<div class="row">
+		{{ column_left }}
+		{% if column_left and column_right %}
+			{% set class = 'col-sm-4 col-md-6 col-lg-6 col-xxl-12' %}
+		{% elseif column_left or column_right %}
+			{% set class = 'col-sm-8 col-md-9 col-lg-9 col-xxl-16' %}
+		{% else %}
+			{% set class = 'col-sm-12' %}
+		{% endif %}
+		<div id="content" class="{{ class }}">
+		    <div class="uni-block__line">
+		    <h1 class="heading">{{ heading_title }}</h1>
+		    	<div class="uni-form">
+			{{ content_top }}
+			<div class="account-wishlist">
+				{% if products %}
+					{% if column_left and column_right %}
+						{% set class = 'product-grid grid-view col-sm-12 col-md-12 col-lg-6 col-xxl-6-1' %}
+					{% elseif column_left or column_right %}
+						{% set class = 'product-grid grid-view col-sm-6 col-md-4 col-lg-4 col-xxl-5' %}
+					{% else %}
+						{% set class = 'product-grid grid-view col-sm-6 col-md-3 col-lg-3 col-xxl-4' %}
+					{% endif %}
+			
+					{% for key, product in products %}
+						<div class="product-layout {{ class }}">
+							<div class="product-thumb uni-item">
+									<div class="product-thumb__image" {{ product.special_date_end ? 'data-special-end="'~product.special_date_end~'"' }}>
+										{% include 'unishop2/template/extension/module/uni_stickers.twig' %}	
+										<a href="{{ product.href }}" title="{{ product.name }}">
+											<img src="{{ product.thumb }}" {{ product.additional_image ? 'data-additional="'~product.additional_image~'"' }} {{ key ? 'loading="lazy"' }} alt="{{ product.name }}" class="img-responsive" width="{{ tab.img_width }}" height="{{ tab.img_height }}" />
+										</a>
+									</div>
+									<div class="product-thumb__caption">
+					    {% include 'unishop2/template/extension/module/uni_options.twig' %}
+						<a class="product-thumb__name" href="{{ product.href }}">{{ product.name }}</a>
+						{% if product.rating >= 0 and show_rating %}
+							<div class="product-thumb__rating rating">
+								{% for i in 1..5 %}
+									<i class="{{ product.rating < i ? 'far fa-star' : 'fa fa-star' }}"></i>
+								{% endfor %} 
+								{% if product.num_reviews > 0 %}<div class="product-ret"><a class="product-thumb__rating-a uni-badge uni-href" data-href="{{ product.href }}#tab-review"><i class="fas fa-comment"></i><span>{{ product.num_reviews }}</span></a></div>{% endif %}
+							</div>
+						{% endif %}
+						{% if product.price %}
+						<div class="product-retw">
+							<div class="product-thumb__price price" data-price="{{ product.price_value }}" data-special="{{ product.special_value }}" data-discount="{{ product.discounts }}">
+								{% if not product.special %}
+									{{ product.price }}
+								{% else %}
+									<span class="price-old">{{ product.price }}</span> <span class="price-new">{{ product.special }}</span> 
+								{% endif %}
+							</div>
+							{% if product.tax %}<div class="price-tax">{{ text_tax }} {{ product.tax }}</div>{% endif %}
+						{% endif %}
+						<div class="product-thumb__cart cart {{ product.cart_btn_class }}">
+							{% include 'unishop2/template/extension/module/uni_quantity_switch.twig' %}
+							<button type="button" class="product-thumb__add-to-cart add_to_cart btn {{ product.cart_btn_class }}" title="{{ product.cart_btn_text }}" data-pid="{{ product.product_id }}" onclick="cart.add({{ product.product_id }}, this)"><i class="fal fa-cart-shopping"></i></button>
+							<a href="{{ product.remove }}" data-href="" title="{{ button_remove }}" class="account-wishlist__delete"><i class="fa fa-trash-alt"></i></a>
+							<button type="button" class="product-thumb__compare compare {{ compare_btn_disabled ? 'hidden' }}" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-balance-scale"></i></button>
+						   </div>
+						</div>
+					    {% if product.show_description %}
+							<div class="product-thumb__description description">{{ product.description }}</div>
+						{% endif %}
+						{% include 'unishop2/template/extension/module/uni_attributes.twig' %}
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+				{% else %}
+					<div style="display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;width:100%;margin:0 10px">
+					    <div class="uni-img__block-compare">
+		     <img src="/image/catalog/banners/wishlist-banner.png" alt="comparison-modal">
+		     </div>
+			<div class="div-text-empty">{{ text_empty }}</div>
+					</div>
+				{% endif %}
+				<div class="buttons clearfix hidden">
+					<div class="pull-right"><a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a></div>
+				    </div>
+			    </div>
+		    </div>
+        </div>
+    </div>
+</div>
+			<script>
+				uniAutoHeight('.product-thumb__name');
+						
+				$('html body').on('click', '.account-wishlist__delete', function(e) {
+					e.preventDefault();
+							
+					let url = $(this).attr('href');
+						
+					$.ajax({
+						url: url,
+						type: 'post',
+						dataType: 'html',
+						success: function(html) {
+							let result = $(html).find('.alert-success');
+							
+							if(result.length) {
+								$('.account-wishlist').html($(html).find('.account-wishlist').html())
+								
+								uniAutoHeight('.product-thumb__name');
+									
+								result.each(function() {
+									uniFlyAlert('success', $(this).text());
+								});
+								
+								wishlist.uniWishlistUpd($('.product-thumb').length);
+							}
+						}
+					});
+				});
+			</script>
+			
+			{{ content_bottom }}
+		</div>
+		{{ column_right }}
+	</div>
+</div>
+{{ footer }}

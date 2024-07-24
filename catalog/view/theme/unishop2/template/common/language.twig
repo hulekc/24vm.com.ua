@@ -1,0 +1,16 @@
+{% if languages|length > 1 %}
+	<div class="left-menu__language">
+		<form action="{{ action }}" method="post" enctype="multipart/form-data" id="language">
+			<div class="btn-group dropdown-toggle">
+				<span class="topl-menu__btn"><img src="/image/catalog/icons/flag-ua.svg" title="{{ language.name }}"alt="flag-ua"></span>
+				<ul class="header-menu-right luxs">
+					{% for language in languages %}
+						<li class="left-menu__language-item thny"><a class="lang-lxn" data-code="{{ language.code }}"><span>{{ language.name }}</span></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			<input type="hidden" name="code" value="" />
+			<input type="hidden" name="redirect" value="{{ redirect }}" />
+		</form>
+	</div>
+{% endif %}

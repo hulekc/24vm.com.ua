@@ -1,0 +1,33 @@
+<form action="{{ action }}" method="post" id="payments">
+    {% for k,v in fields %}
+		{% if v is iterable %}
+			{% for vv in v %}
+			<input type="hidden" name="{{ k }}[]" value="{{ vv }}" />
+			{% endfor %}
+		{% else %}
+			<input type="hidden" name="{{ k }}" value="{{ v }}" />
+		{% endif %}
+	{% endfor %}
+
+<div class="buttons">
+    <div class="pull-right">
+        <input type="submit" value="{{ button_confirm }}" id="button-confirm" data-loading-text="{{ text_loading }}" class="btn btn-primary" />
+    </div>
+</div>
+</form>
+{% if status_referrer %}
+<script>
+	$('#button-confirm').on('click', function() {
+		$.ajax({
+			type: 'get',
+			url: 'index.php?route=extension/payment/wfp/referrer',
+			cache: false,
+			success: function() {
+				$('#payments').submit();
+			}
+		});
+		
+		return false;
+	});
+</script>
+{% endif %}

@@ -1,0 +1,232 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-meest" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %}
+    <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+      </div>
+      <div class="panel-body">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab-setting" data-toggle="tab"><i class="fa fa-cog"></i> {{ tab_setting }}</a></li>
+          <li><a href="#tab-service" data-toggle="tab"><i class="fa fa-refresh "></i> {{ tab_service }}</a></li>
+          <li><a href="#tab-help" data-toggle="tab"><i class="fa fa-info-circle"></i> {{ tab_help }}</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab-setting">
+            <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-meest" class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-tax-class">{{ entry_tax_class }}</label>
+                <div class="col-sm-10">
+                  <select name="shipping_meest2_tax_class_id" id="input-tax-class" class="form-control">
+                    <option value="0">{{ text_none }}</option>
+                    {% for tax_class in tax_classes %}
+                    {% if tax_class.tax_class_id == shipping_meest2_tax_class_id %}
+                    <option value="{{ tax_class.tax_class_id }}" selected="selected">{{ tax_class.title }}</option>
+                    {% else %}
+                    <option value="{{ tax_class.tax_class_id }}">{{ tax_class.title }}</option>
+                    {% endif %}
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-geo-zone">{{ entry_geo_zone }}</label>
+                <div class="col-sm-10">
+                  <select name="shipping_meest2_geo_zone_id" id="input-geo-zone" class="form-control">
+                    <option value="0">{{ text_all_zones }}</option>
+                    {% for geo_zone in geo_zones %}
+                    {% if geo_zone.geo_zone_id == shipping_meest2_geo_zone_id %}
+                    <option value="{{ geo_zone.geo_zone_id }}" selected="selected">{{ geo_zone.name }}</option>
+                    {% else %}
+                    <option value="{{ geo_zone.geo_zone_id }}">{{ geo_zone.name }}</option>
+                    {% endif %}
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">{{ entry_service }}</label>
+                <div class="col-sm-10">
+                  <div class="well well-sm" style="margin-bottom:0">
+                    {% for service in services %}
+					<div style="padding-bottom:20px;margin-bottom:20px">
+                    <div class="col-sm-3 checkbox">
+                      <label>
+                        {% if service.value in shipping_meest2_service %}
+                        <input type="checkbox" name="shipping_meest2_service[]" value="{{ service.value }}" checked="checked" />
+                        {% else %}
+                        <input type="checkbox" name="shipping_meest2_service[]" value="{{ service.value }}" />
+                        {% endif %}
+                        &nbsp;{{ service.text }}
+                      </label>
+                    </div>
+                    <label class="col-sm-2 control-label">{{ entry_cost}}</label>
+                    <div class="col-sm-7">
+                      <input type="text" name="shipping_meest2_cost[{{ service.value }}]" value="{{ shipping_meest2_cost[service.value] }}"  class="form-control" placeholder="{{ entry_cost}}">
+					</div>
+					</div>
+                    {% endfor %}
+                  </div>
+                  <button type="button" onclick="$(this).parent().find(':checkbox').prop('checked', true);" class="btn btn-link">{{ text_select_all }}</button> / <button type="button" onclick="$(this).parent().find(':checkbox').prop('checked', false);" class="btn btn-link">{{ text_unselect_all }}</button></div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-status">{{ entry_status }}</label>
+                <div class="col-sm-10">
+                  <select name="shipping_meest2_status" id="input-status" class="form-control">
+                    {% if shipping_meest2_status %}
+                    <option value="1" selected="selected">{{ text_enabled }}</option>
+                    <option value="0">{{ text_disabled }}</option>
+                    {% else %}
+                    <option value="1">{{ text_enabled }}</option>
+                    <option value="0" selected="selected">{{ text_disabled }}</option>
+                    {% endif %}
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-sort-order">{{ entry_sort_order }}</label>
+                <div class="col-sm-10">
+                  <input type="text" name="shipping_meest2_sort_order" value="{{ shipping_meest2_sort_order }}" placeholder="{{ entry_sort_order }}" id="input-sort-order" class="form-control" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane" id="tab-service">
+		  <button id="button-update" class="btn btn-primary" type="button" onclick="confirm('{{ text_confirm }}') ? updateBranches() : false;">{{ button_update_branch }}</button>
+          </div>
+          <div class="tab-pane" id="tab-help">
+		  <div>{{ help_text_meest }}</div>
+		  <div>{{ help_text_about }}</div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<script>
+function removeLoader() {
+    $(".bg_load").remove();
+	$(".wrapper").remove();
+	$('#button-update').prop('disabled',false);
+}
+function showLoader() {
+	var html = '<div class="bg_load"></div>';
+	html += '<div class="wrapper"><div class="inner">';
+	html += '<span>P</span><span>r</span><span>o</span><span>c</span><span>e</span><span>s</span><span>s</span>';
+	html += '</div>';
+	html += '<div class="inner">';
+	html += '<span id="p_id"></span>';
+	html += '</div>';
+	html += '</div>';
+	$('body').append(html);
+	$(".bg_load").fadeIn("slow");
+	$(".wrapper").fadeIn("slow");
+	$('#button-update').prop('disabled',true);
+
+}
+function updateBranches() {
+	$.ajax({
+		url:'{{ branches }}',
+		beforeSend:function(){
+			showLoader();
+			$('#p_id').text(`{{ text_preparation }}`);
+		},
+		dataType: 'json',
+		success: function () {
+            alert(`{{ text_update_success }}`);
+            removeLoader();
+		},
+        error: function (jqXHR, exception) {
+            if (jqXHR.status === 0) {
+                alert('Not connect. Verify Network.');
+            } else if (jqXHR.status == 404) {
+                alert('Requested page not found (404).');
+            } else if (jqXHR.status == 500) {
+                alert('Internal Server Error (500).');
+            } else if (exception === 'parsererror') {
+                alert('Requested JSON parse failed.');
+            } else if (exception === 'timeout') {
+                alert('Time out error.');
+            } else if (exception === 'abort') {
+                alert('Ajax request aborted.');
+            } else {
+                alert('Uncaught Error. ' + jqXHR.responseText);
+            }
+
+            removeLoader();
+        }
+	})
+}
+
+</script>
+<style>
+.bg_load {position: fixed;left: 0px;top: 0px;width: 100%;height: 100%;background: #EEE;display :none}
+.wrapper {
+    font-size: 20px;
+    width: 8em;
+    height: 8em;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    border: 1em dashed rgba(138,189,195,0.5);
+    box-shadow:
+        inset 0 0 2em rgba(255,255,255,0.3),
+        0 0 0 0.7em rgba(255,255,255,0.3);
+    animation: rota 3.5s linear infinite;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 .04em rgba(255,255,255,0.9);
+    line-height: 6em;
+    display :none
+}
+
+.wrapper:before,.wrapper:after {content: "";position: absolute; z-index: -1; border-radius: inherit; box-shadow: inset 0 0 2em rgba(255,255,255,0.3); border: 1em dashed;}
+
+.wrapper:before {border-color: rgba(138,189,195,0.2);top: 0; right: 0; bottom: 0; left: 0;}
+.wrapper:after {border-color: rgba(138,189,195,0.4);top: 1em; right: 1em; bottom: 1em; left: 1em; }
+.wrapper .inner {width: 100%; height: 100%; animation: rota 3.5s linear reverse infinite;}
+.wrapper span {display: inline-block;animation: placeholder 1.5s ease-out infinite;}
+
+.wrapper span:nth-child(1)  { animation-name: loading-1;  }
+.wrapper span:nth-child(2)  { animation-name: loading-2;  }
+.wrapper span:nth-child(3)  { animation-name: loading-3;  }
+.wrapper span:nth-child(4)  { animation-name: loading-4;  }
+.wrapper span:nth-child(5)  { animation-name: loading-5;  }
+.wrapper span:nth-child(6)  { animation-name: loading-6;  }
+.wrapper span:nth-child(7)  { animation-name: loading-7;  }
+.wrapper span:nth-child(8)  { animation-name: loading-8;  }
+
+@keyframes rota {to { transform: rotate(360deg); {{ '}}' }}
+@keyframes loading-1 {12.5% { opacity: 0.3; {{ '}}' }}
+@keyframes loading-2 {25% { opacity: 0.3; {{ '}}' }}
+@keyframes loading-3 {37.5% { opacity: 0.3; {{ '}}' }}
+@keyframes loading-4 {50% { opacity: 0.3; {{ '}}' }}
+@keyframes loading-5 {62.5% { opacity: 0.3; {{ '}}' }}
+@keyframes loading-6 {75% { opacity: 0.3; {{ '}}' }}
+@keyframes loading-7 {87.5% { opacity: 0.3; {{ '}}' }}
+@keyframes loading-8 {100% { opacity: 0.3; {{ '}}' }}
+</style>
+
+{{ footer }}

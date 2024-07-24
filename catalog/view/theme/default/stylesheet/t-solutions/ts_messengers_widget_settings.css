@@ -1,0 +1,16 @@
+.ts-mw-icon {background:rgba(4, 94, 229, 1);color:rgba(255, 255, 255, 1);}
+.ts-mw-pulse:before, .ts-mw-pulse:after {border: 1px solid rgba(4, 94, 229, 1);}
+.ts-mw-button {right:20px;bottom:20px;}
+.ts-mw-block {right:5px;bottom:51px;}
+.ts-mw-li a {color:rgba(0, 0, 0, 1)!important;}
+.ts-mw-li a:hover {color:rgba(0, 0, 0, 1)!important;}
+.ts-mw-button, .ts-mw-icon, .ts-mw-icon i, .ts-mw-icon .slides span img, .ts-mw-block.mw-no-bg img, .ts-mw-pulse {width:51px;height:51px;}
+.ts-mw-substrate {background:rgba(0, 0, 0, 0.1);}
+.ts-mw-block {-webkit-transform: translateY(50px);-moz-transform: translateY(50px);-ms-transform: translateY(50px);-o-transform: translateY(50px);transform: translateY(50px);}
+.ts-mw-button.open .ts-mw-block {-webkit-transform: translateY(0);-moz-transform: translateY(0);-ms-transform: translateY(0);-o-transform: translateY(0);transform: translateY(0);}
+#uptocall-mini, .fly_callback, .fly-block__callback, #callphone, .animate_btn_1, .animate_btn_2, .animate_btn_3, .animate_btn_4, .callphone, .call-order .container-circle, .call-order .close_phswipe, #bingc-phone-button, .callback-bt, .btn-floating-callback, #us_fixed_contact_button, #fm_fixed_contact_button {display:none !important;}
+@media only screen and (max-width: 768px) {
+.ts-mw-button, .ts-mw-icon, .ts-mw-icon i, .ts-mw-icon .slides span img, .ts-mw-block.mw-no-bg img, .ts-mw-pulse {width:50px;height:50px;}
+.ts-mw-block {bottom:50px;}
+.ts-mw-button {right:20px;bottom:20px;}
+}

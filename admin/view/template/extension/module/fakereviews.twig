@@ -1,0 +1,226 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-fakereviews" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %}
+    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+      </div>
+      <div class="panel-body">
+        <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-fakereviews" class="form-horizontal">
+		  <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-product">{{ text_select_products }}</label>
+            <div class="col-sm-10">
+              <input type="text" name="product_name" value="" placeholder="{{ text_enter_product_name }}" id="input-product" class="form-control" />
+              <div id="featured-product" class="well well-sm" style="height: 150px; overflow: auto;">
+                {% for product in products %}
+                <div id="featured-product{{product['product_id']}}"><i class="fa fa-minus-circle"></i> {{product['name']}}
+                  <input type="hidden" name="fakereviews_product[]" value="{{product['product_id']}}" />
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+		  
+		  
+		    <div class="form-group">
+				<div class="col-sm-2">
+				</div>
+				
+				<div class="col-sm-10">
+					<div class="btn btn-info">{{ text_add_basic_reviews }}</div>
+				</div>
+			
+			</div>
+			
+			<div class="pol" style="display: none">
+			<textarea class="good">Дякую, за товар! Мені дуже сподобалося
+Дякую, за товар! Мені дуже сподобалося
+Дякую за товар! Мені більш ніж сподобалося
+Відмінний товар! Велике дякую! Залишилися задоволені!
+Просто супер) Дякую)
+Дякую, товар просто супер)
+Дякую, за товар! Мені більш ніж сподобалося
+Замовляй не вперше) Завжди задоволений)
+Дякую, за товар! Мені ще як сподобалося
+Як завжди якісно. Дякую!
+Дякую, за товар! Мені дуже сподобалося
+Давно у Вас замовляю, як завжди ми задоволені!
+Дякую, за товар! Мені дуже сподобалося
+Дякую за товар! Мені дуже сподобалося
+Дякую за товар! Мені дуже сподобалося
+Дякую за товар! Мені ще як сподобалося
+Дякую за товар! Мені дуже сподобалося
+Дякую за товар! Мені дуже сподобалося
+Дуже дякую, за товар! Мені дуже сподобалося
+Дуже дякую, за товар! Мені дуже сподобалося
+Дуже дякую, за товар! Мені більш ніж сподобалося
+Дуже дякую, за товар! Мені ще як сподобалося
+Дуже дякую, за товар! Мені дуже сподобалося
+Дуже дякую, за товар! Мені дуже сподобалося
+Мерсі, за товар! Мені дуже сподобалося
+Мерсі, за товар! Мені дуже сподобалося
+Мерсі, за товар! Мені більш ніж сподобалося
+Мерсі, за товар! Мені ще як сподобалося
+Мерсі, за товар! Мені дуже сподобалося
+Мерсі, за товар! Мені дуже сподобалося
+Дякую, за товар! Мені дуже сподобалося
+Дякую, за товар! Мені дуже сподобалося
+Дякую, за товар! Мені більш ніж сподобалося
+Дякую, за товар! Мені ще як сподобалося
+Дякую, за товар! Мені дуже сподобалося
+Дякую, за товар! Мені дуже сподобалося</textarea>
+			</div>
+
+			
+			
+			
+			
+			
+		   <div class="form-group">
+            <label class="col-sm-2 control-label">{{ text_enter_reviews }}<br>{{ text_each_new_line }}</label>
+            <div class="col-sm-10" >
+				<textarea class="form-control otz" name="reviews" style="height: 150px; resize: none;"></textarea>
+            </div>
+          </div>
+		  <script>
+				$('.btn-info').on('click', function () {
+					$('.otz').html($('.good').html());
+				});
+			</script>
+		   <div class="form-group">
+            <label class="col-sm-2 control-label">{{ text_enter_names_buyers }}<br>{{ text_each_new_line }}<br>{{ text_you_one_everyone }}<br>{{ text_for_example }} : {{ text_guest }}</label>
+            <div class="col-sm-4" >
+				<textarea id="names" class="form-control" name="names_uz" style="height: 150px; resize: none;"></textarea>
+            </div>
+          </div>
+		  
+		  
+		   <div class="form-group">
+            <label class="col-sm-2 control-label">{{ text_enter_date_range }}<br>{{ text_for_scattering }}</label>
+            <div class="col-sm-2" >
+				<input type="date" name="date_ot" class="form-control">
+            </div>
+			<div class="col-sm-2" >
+				<input type="date" name="date_do" class="form-control">
+            </div>
+          </div>
+		  
+		  <div class="form-group">
+            <label class="col-sm-2 control-label">{{ text_select_rating }} <br>{{ text_will_supply_reviews }}</label>
+            <div class="col-sm-10" >
+			<label class="radio-inline">
+				<input type="radio" name="ocenka" value="1"> 1
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="ocenka" value="2"> 2
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="ocenka" value="3"> 3
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="ocenka" value="4"> 4
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="ocenka" checked value="5"> 5
+			</label>
+			
+            </div>
+          </div>
+		  
+		  <div class="form-group">
+			<label class="col-sm-2 control-label">{{ text_status_reviews_after  }}</label>
+			<div class="col-sm-2" >
+				<input type="radio" name="stat_otz"  value="1"> {{ text_included }}<br>
+				<input type="radio" name="stat_otz" checked value="0"> {{ text_included_off }}<br>
+            </div>
+		  </div>
+		  
+		  <div class="form-group">
+			<div class="col-sm-2" >
+			</div>
+			<div class="col-sm-2" >
+				<div class="btn btn-success">{{ text_generate_reviews }}</div>
+			</div>
+		  </div>
+		  
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+   <script type="text/javascript"><!--
+   
+   
+   $('.btn-success').on('click', function () {
+	   var data = $('#form-fakereviews').serialize();
+	   if ($('textarea[name="reviews"]').val().length < 1) {
+	       alert('{{ text_no_reviews_entered }}');
+       } else if ($('textarea[name="names_uz"]').val().length < 1) {
+           alert('{{ text_customer_names_not_entered }}');
+       } else if ($('input[name="date_ot"]').val().length < 1) {
+           alert('{{ text_from_date_not_entered }}');
+       } else if ($('input[name="date_do"]').val().length < 1) {
+           alert('{{ text_date_until_entered }}');
+       } else {
+           $.ajax({
+               url: 'index.php?route=extension/module/fakereviews/addreviews&user_token={{token}}',
+               dataType: 'json',
+               data: data,
+               success: function(json) {
+                   alert('{{ text_reviews_successfully_added }}');
+               }
+           });
+       }
+
+   });
+   
+$('input[name=\'product_name\']').autocomplete({
+	source: function(request, response) {
+		$.ajax({
+			url: 'index.php?route=catalog/product/autocomplete&user_token={{token}}&filter_name=' +  encodeURIComponent(request),
+			dataType: 'json',
+			success: function(json) {
+				response($.map(json, function(item) {
+					return {
+						label: item['name'],
+						value: item['product_id']
+					}
+				}));
+			}
+		});
+	},
+	select: function(item) {
+		$('input[name=\'product_name\']').val('');
+		
+		$('#featured-product' + item['value']).remove();
+		
+		$('#featured-product').append('<div id="featured-product' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="fakereviews_product[]" value="' + item['value'] + '" /></div>');
+	}
+});
+	
+$('#featured-product').delegate('.fa-minus-circle', 'click', function() {
+	$(this).parent().remove();
+});
+//--></script>
+  
+</div>
+{{ footer }}

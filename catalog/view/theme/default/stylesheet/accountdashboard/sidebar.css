@@ -1,0 +1,52 @@
+.account-sidebar{
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 0 40px rgb(0 0 0 / 10%);
+}
+.account-sidebar .list-group{
+  margin-bottom: 15px;
+}
+.account-sidebar .list-group-item{
+  display: block;
+  text-decoration: none;
+  color: #202020;
+  padding: 2px 8px;
+  min-height: 0;
+}
+.account-sidebar .list-group-item i{
+  margin-right: 10px;
+  width: 38px;
+  height: 38px;
+}
+.account-sidebar .list-group-item:hover{
+  color: #202020;
+  text-shadow: none;
+  border-radius: 4px;
+}
+.account-sidebar h3{
+  margin: 0;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+}
+.account-sidebar .box-content{
+  position: 0;
+  padding: 0;
+}
+.account-sidebar ul {
+    padding: 4px 0;
+    margin-bottom: 4px;
+    list-style: none;
+    border-bottom: 1px solid #e9e9e9;
+}
+.account-sidebar ul:last-child {
+    border-bottom: none;
+}
+.lux-icon__menu-account {display: flex;text-align: center;align-items: center;min-height: 0;}
+.account-sidebar .list-group{padding: 2px 8px;background-color: #fff;}
+.lux-icon__menu-account i:hover, .list-gp-menu:hover .lux-icon__menu-account i{background-color: initial;}
+.list-gp-menu{padding: 4px 0;}
+

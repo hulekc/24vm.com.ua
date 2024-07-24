@@ -1,0 +1,605 @@
+{{ header }}{{column_left }}
+
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-ldev-smart-video-widget" data-toggle="tooltip" title="{{ lang['button_save'] }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        {% if apply %}
+        <button id="apply" class="btn btn-success"><i class="fa fa-check"> {{ text_apply }}</i></button>
+        {% endif %}
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ lang['button_cancel'] }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+      <h1>{{ lang['heading_title'] }}</h1>
+      <ul class="breadcrumb">
+          {% for breadcrumb in breadcrumbs %}
+            <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+          {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+
+      {% if success %}
+        <div class="alert alert-success"><i class="fa fa-exclamation-circle"></i> {{ success }}
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+        </div>
+      {% endif %}
+      {% if error_warning %}
+        <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+        </div>
+      {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ lang['text_edit'] }}</h3>
+      </div>
+      <div class="panel-body">
+        <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-ldev-smart-video-widget" class="form-horizontal">
+
+
+            {% if not s %}
+
+            <h4>{{ lang['text_activation'] }}</h4>
+            <p class="alert alert-warning">
+                {{ lang['text_mailto'] }} <a href="mailto:seriusisu@gmail.com">seriusisu@gmail.com</a>
+            </p>
+            <div class="col-sm-6">
+              <label class="control-label">{{ lang['entry_key'] }}</label>
+              <div>
+                <input type="hidden" name="module_ldev_smart_video_widget_ks" value="{{ k_s }}">
+                <input type="text" name="form_set" value="" class="form-control">
+                <input type="hidden" name="name" value="{{ name }}" class="form-control">
+                <input type="hidden" name="status" value="{{ status }}" class="form-control">
+
+              </div>
+            </div>
+
+            {% else %}
+
+
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-general" data-toggle="tab">{{ tab_general }}</a></li>
+                <li><a href="#tab-video-setting" data-toggle="tab">{{ tab_video_setting }}</a></li>
+                <li><a href="#tab-view-setting" data-toggle="tab">{{ tab_view_setting }}</a></li>
+                <li><a href="#tab-buttons" data-toggle="tab">{{ tab_buttons }}</a></li>
+                <li><a href="#tab-image" data-toggle="tab">{{ tab_image }}</a></li>
+                <li><a href="#tab-pages" data-toggle="tab">{{ tab_pages }}</a></li>
+                <li><a href="#tab-contacts" data-toggle="tab">{{ tab_contacts }}</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="tab-general" class="tab-pane active">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-name">{{ lang['entry_name'] }}</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="name" value="{{ name }}" id="input-name" class="form-control" />
+                        {% if error_name %}
+                          <div class="text-danger">{{ error_name }}</div>
+                        {% endif %}
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-status">{{ lang['entry_status'] }}</label>
+                    <div class="col-sm-10">
+                      <select name="status" id="input-status" class="form-control">
+                          {% if status %}
+                            <option value="1" selected="selected">{{ lang['text_enabled'] }}</option>
+                            <option value="0">{{ lang['text_disabled'] }}</option>
+                          {% else %}
+                            <option value="1">{{ lang['text_enabled'] }}</option>
+                            <option value="0" selected="selected">{{ lang['text_disabled'] }}</option>
+                          {% endif %}
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <a href="#" id="thumb-image" data-toggle="image" class="img-thumbnail btn btn-success">
+                          {{ lang.text_video_upload }}
+                      </a>
+                      <input type="text" name="video" value="{{ video }}" id="input-image">
+
+                      <br><small>{{ lang['text_video_upload_description'] }}</small>
+                      <br><small>{{ lang['text_video_upload_description2'] }}</small>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_custom_css'] }}</label>
+                    <div class="col-sm-10">
+                      <textarea name="custom_css" rows="10" class="form-control">{{ custom_css }}</textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_custom_js'] }}</label>
+                    <div class="col-sm-10">
+                      <textarea name="custom_js" rows="10" class="form-control">{{ custom_js }}</textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="tab-video-setting" class="tab-pane">
+
+                  <div class="form-group">
+                    <div class="col-sm-6">
+                      <label class="control-label" for="input-limit">{{ lang['entry_video_small_width'] }}</label>
+                      <input type="text" name="video_small_width" value="{{ video_small_width }}" placeholder="{{ entry_width }}" class="form-control" />
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="control-label" for="input-limit">{{ lang['entry_video_small_height'] }}</label>
+                      <input type="text" name="video_small_height" value="{{ video_small_height }}" placeholder="{{ entry_height }}" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-6">
+                      <label class="control-label" for="input-limit"><span data-toggle="tooltip" title="{{ lang['entry_video_big_tooltip'] }}">{{ lang['entry_video_big_width'] }}</span> </label>
+                      <input type="text" name="video_big_width" value="{{ video_big_width }}" placeholder="{{ entry_width }}" class="form-control" />
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="control-label" for="input-limit">{{ lang['entry_video_big_height'] }}</label>
+                      <input type="text" name="video_big_height" value="{{ video_big_height }}" placeholder="{{ entry_height }}" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_restart_on_expanse'] }}</label>
+                    <div class="col-sm-10">
+                      <select name="restart_on_expanse"  class="form-control">
+                        <option value="0" {% if restart_on_expanse == '0' %} selected="selected" {% endif %} > {{ lang['text_disabled'] }} </option>
+                        <option value="1" {% if restart_on_expanse == '1' %} selected="selected" {% endif %} > {{ lang['text_enabled'] }} </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"><span data-toggle="tooltip" title="{{ lang['entry_autostart_tooltip'] }}">{{ lang['entry_autostart'] }}</span> </label>
+                    <div class="col-sm-10">
+                      <select name="autostart"  class="form-control">
+                        <option value="0" {% if autostart == '0' %} selected="selected" {% endif %} > {{ lang['text_disabled'] }} </option>
+                        <option value="1" {% if autostart == '1' %} selected="selected" {% endif %} > {{ lang['text_enabled'] }} </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_loop'] }}</label>
+                    <div class="col-sm-10">
+                      <select name="loop"  class="form-control">
+                        <option value="0" {% if loop == '0' %} selected="selected" {% endif %} > {{ lang['text_disabled'] }} </option>
+                        <option value="1" {% if loop == '1' %} selected="selected" {% endif %} > {{ lang['text_enabled'] }} </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_video_controls'] }}</label>
+                    <div class="col-sm-10">
+                      <select name="video_controls"  class="form-control">
+                        <option value="0" {% if video_controls == '0' %} selected="selected" {% endif %} > {{ lang['text_disabled'] }} </option>
+                        <option value="1" {% if video_controls == '1' %} selected="selected" {% endif %} > {{ lang['text_enabled'] }} </option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div id="tab-view-setting" class="tab-pane">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"><span data-toggle="tooltip" title="{{ lang['entry_delay_tooltip'] }}">{{ lang['entry_delay'] }}</span> </label>
+                    <div class="col-sm-10">
+                      <input type="text" name="delay" value="{{ delay }}" class="form-control">
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_widget_position'] }}</label>
+                    <div class="col-sm-10">
+                      <select name="widget_position"  class="form-control">
+                        <option value="center_top" {% if widget_position == 'center_top' %} selected="selected" {% endif %} > {{ lang['text_widget_position_center_top'] }} </option>
+                        <option value="right_top" {% if widget_position == 'right_top' %} selected="selected" {% endif %} > {{ lang['text_widget_position_right_top'] }} </option>
+                        <option value="left_top" {% if widget_position == 'left_top' %} selected="selected" {% endif %} > {{ lang['text_widget_position_left_top'] }} </option>
+                        <option value="left_bottom" {% if widget_position == 'left_bottom' %} selected="selected" {% endif %} > {{ lang['text_widget_position_left_bottom'] }} </option>
+                        <option value="right_bottom" {% if widget_position == 'right_bottom' %} selected="selected" {% endif %} > {{ lang['text_widget_position_right_bottom'] }} </option>
+                        <option value="center_bottom" {% if widget_position == 'center_bottom' %} selected="selected" {% endif %} > {{ lang['text_widget_position_center_bottom'] }} </option>
+                        <option value="left_middle" {% if widget_position == 'left_middle' %} selected="selected" {% endif %} > {{ lang['text_widget_position_left_middle'] }} </option>
+                        <option value="right_middle" {% if widget_position == 'right_middle' %} selected="selected" {% endif %} > {{ lang['text_widget_position_right_middle'] }} </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_show_mobile'] }}</label>
+                    <div class="col-sm-10">
+                      <select name="show_mobile"  class="form-control">
+                        <option value="0" {% if show_mobile == '0' %} selected="selected" {% endif %} > {{ lang['text_disabled'] }} </option>
+                        <option value="1" {% if show_mobile == '1' %} selected="selected" {% endif %} > {{ lang['text_enabled'] }} </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-12 "><h4>{{ lang['entry_period'] }}</h4></div>
+                    <div class="col-sm-6">
+                      <label class="control-label">{{ lang['entry_period_status'] }}</label>
+                      <select name="period"  class="form-control">
+                        <option value="0" {% if period == '0' %} selected="selected" {% endif %} > {{ lang['entry_period_disabled'] }} </option>
+                        <option value="1" {% if period == '1' %} selected="selected" {% endif %} > {{ lang['text_enabled'] }} </option>
+                      </select>
+
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="control-label">{{ lang['entry_period_duration'] }}</label>
+                      <select name="period_duration"  class="form-control">
+                        <option value="0" {% if period_duration == '0' %} selected="selected" {% endif %} > {{ lang['entry_period_duration_0'] }} </option>
+                        <option value="3600" {% if period_duration == '3600' %} selected="selected" {% endif %} > {{ lang['entry_period_duration_hour'] }} </option>
+                        <option value="86400" {% if period_duration == '86400' %} selected="selected" {% endif %} > {{ lang['entry_period_duration_day'] }} </option>
+                        <option value="604800" {% if period_duration == '604800' %} selected="selected" {% endif %} > {{ lang['entry_period_duration_week'] }} </option>
+                        <option value="864000" {% if period_duration == '864000' %} selected="selected" {% endif %} > {{ lang['entry_period_duration_10days'] }} </option>
+                        <option value="2592000" {% if period_duration == '2592000' %} selected="selected" {% endif %} > {{ lang['entry_period_duration_mounth'] }} </option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_btn_close'] }}</label>
+                    <div class="col-sm-10">
+                      <select name="btn_close"  class="form-control">
+                        <option value="0" {% if btn_close == '0' %} selected="selected" {% endif %} > {{ lang['text_disabled'] }} </option>
+                        <option value="1" {% if btn_close == '1' %} selected="selected" {% endif %} > {{ lang['text_enabled'] }} </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_btn_close_action'] }}</label>
+                    <div class="col-sm-10">
+                      <select name="btn_close_action"  class="form-control">
+                        <option value="remove" {% if btn_close_action == 'remove' %} selected="selected" {% endif %} > {{ lang['text_btn_close_action_remove'] }} </option>
+                        <option value="session" {% if btn_close_action == 'session' %} selected="selected" {% endif %} > {{ lang['text_btn_close_action_session'] }} </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_exiting'] }}</label>
+                    <div class="col-sm-10">
+                      <select name="on_exiting"  class="form-control">
+                        <option value="0" {% if on_exiting == '0' %} selected="selected" {% endif %} > {{ lang['text_disabled'] }} </option>
+                        <option value="1" {% if on_exiting == '1' %} selected="selected" {% endif %} >{{ lang['text_enabled'] }}  </option>
+                      </select>
+
+                      {{ lang['entry_exiting_description'] }}
+
+                    </div>
+                  </div>
+
+
+
+
+
+                </div>
+
+                <div id="tab-buttons" class="tab-pane">
+                  <ul class="nav nav-tabs language">
+                      {% for language in languages %}
+                        <li><a href="#language-{{ i }}-{{ language.language_id }}" data-toggle="tab"><img src="{{ language.flag }}" title="{{ language.name }}" /> {{ language.name }}</a></li>
+                      {% endfor %}
+                  </ul>
+                  <div class="tab-content">
+                      {% for language in languages %}
+                        <div class="tab-pane" id="language-{{ i }}-{{ language.language_id }}">
+                          <div class="form-group">
+                            <div class="col-sm-12"><label class="control-label"><span data-toggle="tooltip" title="{{ lang['entry_btn_tooltip'] }}">{{ lang['entry_btn_1'] }}</span></label></div>
+                            <div class="col-sm-6">
+                              <input type="text" name="btn_1_text[{{ language.language_id }}]" value="{{ btn_1_text[language.language_id] }}" placeholder="{{ lang['entry_btn_1_text'] }}" class="form-control" />
+                            </div>
+                            <div class="col-sm-6">
+                              <input type="text" name="btn_1_href[{{ language.language_id }}]" value="{{ btn_1_href[language.language_id] }}" placeholder="{{ lang['entry_btn_1_href'] }}" class="form-control" />
+                            </div>
+                          </div>
+
+
+
+                          <div class="form-group">
+                            <div class="col-sm-12"><label class="control-label"><span data-toggle="tooltip" title="{{ lang['entry_btn_tooltip'] }}">{{ lang['entry_btn_2'] }}</span></label></div>
+                            <div class="col-sm-6">
+                              <input type="text" name="btn_2_text[{{ language.language_id }}]" value="{{ btn_2_text[language.language_id] }}" placeholder="{{ lang['entry_btn_2_text'] }}" class="form-control" />
+                            </div>
+                            <div class="col-sm-6">
+                              <input type="text" name="btn_2_href[{{ language.language_id }}]" value="{{ btn_2_href[language.language_id] }}" placeholder="{{ lang['entry_btn_2_href'] }}" class="form-control" />
+                            </div>
+                          </div>
+
+
+                          <div class="form-group">
+                            <div class="col-sm-12"><label class="control-label"><span data-toggle="tooltip" title="{{ lang['entry_description_tooltip'] }}">{{ lang['entry_description'] }}</span></label></div>
+                            <div class="col-sm-12">
+                              <textarea name="description[{{ language.language_id }}]" class="form-control">{{ description[language.language_id] }}</textarea>
+                            </div>
+                          </div>
+
+                        </div>
+                      {% endfor %}
+                  </div>
+
+
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label">{{ lang['entry_btn_size'] }}</label>
+                    <div class="col-sm-8">
+                      <select name="btn_size"  class="form-control">
+                        <option value="xs" {% if btn_size == 'xs' %} selected="selected" {% endif %} > xs </option>
+                        <option value="sm" {% if btn_size == 'sm' %} selected="selected" {% endif %} > sm </option>
+                        <option value="" {% if btn_size == '' %} selected="selected" {% endif %} > Default  </option>
+                        <option value="lg" {% if btn_size == 'lg' %} selected="selected" {% endif %} > lg  </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label">{{ lang['entry_btn_style'] }}</label>
+                    <div class="col-sm-8">
+                      <select name="btn_style"  class="form-control">
+                        <option value="default" {% if btn_style == 'default' %} selected="selected" {% endif %} > default </option>
+                        <option value="primary" {% if btn_style == 'primary' %} selected="selected" {% endif %} > primary </option>
+                        <option value="success" {% if btn_style == 'success' %} selected="selected" {% endif %} > success </option>
+                        <option value="info" {% if btn_style == 'info' %} selected="selected" {% endif %} > info </option>
+                        <option value="warning" {% if btn_style == 'warning' %} selected="selected" {% endif %} > warning </option>
+                        <option value="danger" {% if btn_style == 'danger' %} selected="selected" {% endif %} > danger </option>
+                        <option value="link" {% if btn_style == 'link' %} selected="selected" {% endif %} > link </option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label">{{ lang['entry_btn_over'] }}</label>
+                    <div class="col-sm-8">
+                      <select name="btn_over"  class="form-control">
+                        <option value="0" {% if btn_over == '0' %} selected="selected" {% endif %} > {{ lang['text_disabled'] }} </option>
+                        <option value="1" {% if btn_over == '1' %} selected="selected" {% endif %} > {{ lang['text_enabled'] }} </option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div id="tab-image" class="tab-pane">
+
+                  <div class="form-group">
+                    <label class="col-sm-12">{{ lang['entry_image'] }}</label>
+                    <div class="col-sm-12"><a href="" id="thumb-image2" data-toggle="image" class="img-thumbnail"><img src="{{ thumb }}" alt="" title="" data-placeholder="{{ placeholder }}" /></a>
+                      <input type="hidden" name="image" value="{{ image }}" id="input-image2" />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                     <h4>{{ lang['text_image_small'] }}</h4>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" name="image_small_width" value="{{ image_small_width }}" placeholder="{{ lang['entry_width'] }}" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" name="image_small_height" value="{{ image_small_height }}" placeholder="{{ lang['entry_height'] }}" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <h4>{{ lang['text_image_big'] }}</h4>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" name="image_big_width" value="{{ image_big_width }}" placeholder="{{ lang['entry_width'] }}" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" name="image_big_height" value="{{ image_big_height }}" placeholder="{{ lang['entry_height'] }}" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_image_click'] }}</label>
+                    <div class="col-sm-10">
+                      <select name="image_click"  class="form-control">
+                        <option value="popup" {% if image_click == 'popup' %} selected="selected" {% endif %} > {{ lang['text_image_popup'] }} </option>
+                        <option value="link" {% if image_click == 'link' %} selected="selected" {% endif %} > {{ lang['text_image_link'] }} </option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ lang['entry_image_link'] }}</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="image_link" value="{{ image_link }}" class="form-control" />
+                    </div>
+                  </div>
+
+                </div>
+
+                <div id="tab-pages" class="tab-pane">
+
+                  <div class="alert alert-info">{{ lang['text_pages'] }}</div>
+                  <div class="alert alert-warning">{{ lang['text_pages_description'] }}</div>
+
+                  <div class="form-group">
+                    <div class="col-sm-3">
+                      <h4>{{ lang['entry_products'] }}</h4>
+                      <div>
+                        <input type="text" name="related" value="" placeholder="" id="input-related" class="form-control" />
+                        <div id="product-related" class="well well-sm" style="height: 150px; overflow: auto;">
+                            {% for product_related in module_products %}
+                              <div id="product-related{{ product_related.product_id }}"><i class="fa fa-minus-circle"></i> {{ product_related.name }}
+                                <input type="hidden" name="module_products[]" value="{{ product_related.product_id }}" />
+                              </div>
+                            {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-sm-4">
+                      <h4>{{ lang['entry_categories'] }}</h4>
+                      <div class="well well-sm" style="height:320px; overflow: auto;margin-bottom:0">
+                        <div class="row">
+
+                            {% for category in shop_categories %}
+                              <div class="col-sm-12">
+                                <div class="checkbox-inline">
+                                  <label>
+                                    <input type="checkbox" name="module_categories[]" value="{{ category.category_id }}"
+                                            {% if category.category_id in module_categories %} checked = "checked" {% endif %} />
+                                      {{ category.name }}
+                                  </label>
+                                </div>
+                              </div>
+                            {% endfor %}
+                        </div>
+                      </div>
+                      <button class="check_all btn btn-default btn-sm">{{ lang['btn_check_all'] }}</button>
+                      <button class="uncheck_all btn btn-default btn-sm">{{ lang['btn_uncheck_all'] }}</button>
+                    </div>
+                    <div class="col-sm-4">
+                      <h4>{{ lang['entry_manufacturers'] }}</h4>
+                      <div class="well well-sm" style="height:320px; overflow: auto;margin-bottom:0">
+                        <div class="row">
+
+                            {% for manufacturer in shop_manufacturers %}
+                              <div class="col-sm-12">
+                                <div class="checkbox-inline">
+                                  <label>
+                                    <input type="checkbox" name="module_manufacturers[]" value="{{ manufacturer.manufacturer_id }}"
+                                            {% if manufacturer.manufacturer_id in module_manufacturers %} checked = "checked" {% endif %} />
+                                      {{ manufacturer.name }}
+                                  </label>
+                                </div>
+                              </div>
+                            {% endfor %}
+                        </div>
+                      </div>
+                      <button class="check_all btn btn-default btn-sm">{{ lang['btn_check_all'] }}</button>
+                      <button class="uncheck_all btn btn-default btn-sm">{{ lang['btn_uncheck_all'] }}</button>
+                    </div>
+                    <div class="col-sm-4">
+                      <h4>{{ lang['entry_informations'] }}</h4>
+                      <div class="well well-sm" style="height:320px; overflow: auto;margin-bottom:0">
+                        <div class="row">
+
+                            {% for information in shop_informations %}
+                              <div class="col-sm-12">
+                                <div class="checkbox-inline">
+                                  <label>
+                                    <input type="checkbox" name="module_informations[]" value="{{ information.information_id }}"
+                                            {% if information.information_id in module_informations %} checked = "checked" {% endif %} />
+                                      {{ information.title }}
+                                  </label>
+                                </div>
+                              </div>
+                            {% endfor %}
+                        </div>
+                      </div>
+                      <button class="check_all btn btn-default btn-sm">{{ lang['btn_check_all'] }}</button>
+                      <button class="uncheck_all btn btn-default btn-sm">{{ lang['btn_uncheck_all'] }}</button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div id="tab-contacts" class="tab-pane">
+                  {{ lang['text_contact'] }}
+                </div>
+
+              </div>
+
+
+          <input type="hidden" name="ldev_video_widget_ks" value="{{ k_s }}">
+
+
+
+
+          {% endif %}
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<script>
+    $('.language li:first-of-type a').tab('show');
+
+
+    $(function () {
+        $('#apply').on('click', function () {
+            var action_url = "{{ apply }}";
+            $("#form-ldev-smart-video-widget").attr('action', action_url.replace(/&amp;/g, '&'));
+
+            console.log(action_url.replace(/&amp;/g, '&'));
+            $('#form-ldev-smart-video-widget').submit();
+        })
+    });
+
+
+    //check-uncheck
+    $(function () {
+        $('.check_all').on('click', function (e) {
+            e.preventDefault();
+            $(this).closest('div').find('input[type="checkbox"]').prop('checked', true)
+        });
+
+        $('.uncheck_all').on('click', function (e) {
+            e.preventDefault();
+            $(this).closest('div').find('input[type="checkbox"]').prop('checked', false)
+        })
+    });
+
+
+    // Related
+    $('input[name=\'related\']').autocomplete({
+        'source': function(request, response) {
+//            var filter_name = request['term'];
+            var filter_name = request;
+            $.ajax({
+                url: 'index.php?route=catalog/product/autocomplete&user_token={{ token }}&filter_name=' +  encodeURIComponent(filter_name),
+                dataType: 'json',
+                success: function(json) {
+                    response($.map(json, function(item) {
+                        return {
+                            label: item['name'],
+                            value: item['product_id']
+                        }
+                    }));
+                }
+            });
+        },
+        'select': function(item) {
+            $('input[name=\'related\']').val('');
+
+            $('#product-related' + item['value']).remove();
+
+            $('#product-related').append('<div id="product-related' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="module_products[]" value="' + item['value'] + '" /></div>');
+        }
+    });
+
+
+    $('#product-related').delegate('.fa-minus-circle', 'click', function() {
+        $(this).parent().remove();
+    });
+
+
+</script>
+
+
+
+{{ footer }}

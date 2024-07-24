@@ -1,0 +1,47 @@
+{{ header }}
+<div id="account-forgotten" class="container">
+	<!--<ul class="breadcrumb">
+		{% for key, breadcrumb in breadcrumbs %}
+			{% if key+1 < breadcrumbs|length %}
+				<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+			{% else %}
+				<li>{{ breadcrumb.text }}</li>
+			{% endif %}
+		{% endfor %}
+	</ul>-->
+	{% if error_warning %}
+		<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}</div>
+	{% endif %}
+	<div class="row">
+		{{ column_left }}
+		{% if column_left and column_right %}
+			{% set class = 'col-sm-6' %}
+		{% elseif column_left or column_right %}
+			{% set class = 'col-sm-9' %}
+		{% else %}
+			{% set class = 'col-sm-12' %}
+		{% endif %}
+		<div id="content" class="{{ class }}">
+		    <div class="account-blocks">
+		    <div class="uni-img__block forgot-password__img">
+		     <img src="/image/catalog/banners/forgotten-password.png" alt="forgotten-password">
+		     </div>
+		     <div class="account-block__lx uni-block__line form-horizontal">
+			{{ content_top }}
+				<h3 class="heading">{{ heading_title }}</h3>
+				<p>{{ text_pasword_sistem }}.</p>
+					<div class="account-forgotten uni-form">
+					<div class="account-forgotten__text">{{ text_email }}<br>{{ text_email_to }}</div>
+					<form action="{{ action }}" method="post" enctype="multipart/form-data" class="form-horizontal">
+						<input type="text" name="email" value="{{ email }}" placeholder="{{ entry_email }}" id="input-email" class="form-control" />
+						<button type="submit" class="account-forgotten__btn btn btn-primary">{{ button_pasword_lux }}</button>
+					</form>
+				</div>
+			</div>
+		</div>
+			{{ content_bottom }}
+		</div>
+		{{ column_right }}
+	</div>
+</div>
+{{ footer }}

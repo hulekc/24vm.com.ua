@@ -1,0 +1,973 @@
+[27-Sep-2023 11:34:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Language' not found in /home/jsfivnhi/grandsmart.shop/system/framework.php:124
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/startup.php(104): require_once()
+#1 /home/jsfivnhi/grandsmart.shop/admin/index.php(19): start('admin')
+#2 {main}
+  thrown in /home/jsfivnhi/grandsmart.shop/system/framework.php on line 124
+[15-Oct-2023 23:50:57 Europe/Kiev] PHP Parse error:  syntax error, unexpected 'reachGoal' (T_STRING) in /home/jsfivnhi/grandsmart.shop/admin/language/uk-ua/extension/module/uni_settings.php on line 860
+[16-Oct-2023 01:57:59 Europe/Kiev] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A hash key must be a quoted string, a number, a name, or an expression enclosed in parentheses (unexpected token "punctuation" of value "{" in "extension/module/uni_settings.twig" at line 1393. in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php:376
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(281): Twig\ExpressionParser->parseHashExpression()
+#1 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#2 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#3 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(380): Twig\ExpressionParser->parseExpression()
+#4 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(281): Twig\ExpressionParser->parseHashExpression()
+#5 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/s in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php on line 376
+[16-Oct-2023 01:58:51 Europe/Kiev] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected "}" in "extension/module/uni_settings.twig" at line 1393. in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php:340
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php(281): Twig\Lexer->lexExpression()
+#1 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php(182): Twig\Lexer->lexBlock()
+#2 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(542): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(595): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(381): Twig\Environment->loadClass('__TwigTemplate_...', 'extension/modul...', NULL)
+#6 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(359): Twig\Envi in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php on line 340
+[16-Oct-2023 01:58:53 Europe/Kiev] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected "}" in "extension/module/uni_settings.twig" at line 1393. in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php:340
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php(281): Twig\Lexer->lexExpression()
+#1 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php(182): Twig\Lexer->lexBlock()
+#2 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(542): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(595): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(381): Twig\Environment->loadClass('__TwigTemplate_...', 'extension/modul...', NULL)
+#6 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(359): Twig\Envi in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php on line 340
+[16-Oct-2023 01:58:54 Europe/Kiev] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected "}" in "extension/module/uni_settings.twig" at line 1393. in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php:340
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php(281): Twig\Lexer->lexExpression()
+#1 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php(182): Twig\Lexer->lexBlock()
+#2 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(542): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(595): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(381): Twig\Environment->loadClass('__TwigTemplate_...', 'extension/modul...', NULL)
+#6 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(359): Twig\Envi in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php on line 340
+[16-Oct-2023 01:58:55 Europe/Kiev] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected "}" in "extension/module/uni_settings.twig" at line 1393. in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php:340
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php(281): Twig\Lexer->lexExpression()
+#1 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php(182): Twig\Lexer->lexBlock()
+#2 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(542): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(595): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(381): Twig\Environment->loadClass('__TwigTemplate_...', 'extension/modul...', NULL)
+#6 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(359): Twig\Envi in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php on line 340
+[16-Oct-2023 01:58:56 Europe/Kiev] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected "}" in "extension/module/uni_settings.twig" at line 1393. in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php:340
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php(281): Twig\Lexer->lexExpression()
+#1 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php(182): Twig\Lexer->lexBlock()
+#2 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(542): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(595): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(381): Twig\Environment->loadClass('__TwigTemplate_...', 'extension/modul...', NULL)
+#6 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(359): Twig\Envi in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Lexer.php on line 340
+[16-Oct-2023 02:03:29 Europe/Kiev] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A hash key must be followed by a colon (:). Unexpected token "punctuation" of value "}" ("punctuation" expected with value ":") in "extension/module/uni_settings.twig" at line 1393. in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/TokenStream.php:76
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(379): Twig\TokenStream->expect(9, ':', 'A hash key must...')
+#1 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(281): Twig\ExpressionParser->parseHashExpression()
+#2 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(663): Twig\ExpressionParser->parseExpression()
+#5 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Token in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/TokenStream.php on line 76
+[16-Oct-2023 02:05:04 Europe/Kiev] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A hash key must be a quoted string, a number, a name, or an expression enclosed in parentheses (unexpected token "punctuation" of value "{" in "extension/module/uni_settings.twig" at line 1393. in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php:376
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(281): Twig\ExpressionParser->parseHashExpression()
+#1 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#2 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#3 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(663): Twig\ExpressionParser->parseExpression()
+#4 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/TokenParser/SetTokenParser.php(38): Twig\ExpressionParser->parseMultitargetExpression()
+#5 /home/jsfivnhi/ocartdataxx/storage/ve in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php on line 376
+[16-Oct-2023 02:06:09 Europe/Kiev] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A hash key must be a quoted string, a number, a name, or an expression enclosed in parentheses (unexpected token "punctuation" of value "{" in "extension/module/uni_settings.twig" at line 1393. in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php:376
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(281): Twig\ExpressionParser->parseHashExpression()
+#1 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#2 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#3 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression(21)
+#4 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php(663): Twig\ExpressionParser->parseExpression()
+#5 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/ExpressionParser.php on line 376
+[16-Oct-2023 02:16:54 Europe/Kiev] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected token "name" of value "ссылка" ("end of print statement" expected) in "extension/module/uni_settings.twig" at line 5900. in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/TokenStream.php:76
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Parser.php(143): Twig\TokenStream->expect(4)
+#1 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Parser.php(98): Twig\Parser->subparse(NULL, false)
+#2 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(563): Twig\Parser->parse(Object(Twig\TokenStream))
+#3 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(595): Twig\Environment->parse(Object(Twig\TokenStream))
+#4 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(381): Twig\Environment->loadClass('__TwigTemplate_...', 'extension/modul...', NULL in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/TokenStream.php on line 76
+[16-Oct-2023 04:00:57 Europe/Kiev] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected "endif" tag (expecting closing tag for the "spaceless" tag defined near line 16) in "extension/module/uni_settings.twig" at line 143. in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Parser.php:169
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/TokenParser/SpacelessTokenParser.php(39): Twig\Parser->subparse(Array, true)
+#1 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Parser.php(185): Twig\TokenParser\SpacelessTokenParser->parse(Object(Twig\Token))
+#2 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Parser.php(98): Twig\Parser->subparse(NULL, false)
+#3 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(563): Twig\Parser->parse(Object(Twig\TokenStream))
+#4 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(595): Twig\Environment->parse(Object(Twig\TokenStream))
+#5 /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Environment.php(408): Twig\Environment->compileSource(Ob in /home/jsfivnhi/ocartdataxx/storage/vendor/twig/twig/src/Parser.php on line 169
+[16-Oct-2023 15:36:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Language' not found in /home/jsfivnhi/grandsmart.shop/system/framework.php:124
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/startup.php(104): require_once()
+#1 /home/jsfivnhi/grandsmart.shop/admin/index.php(19): start('admin')
+#2 {main}
+  thrown in /home/jsfivnhi/grandsmart.shop/system/framework.php on line 124
+[20-Oct-2023 18:24:19 Europe/Helsinki] PHP Warning:  include_once(/home/jsfivnhi/ocartdataxx/storage/modification/system/library/config.php): failed to open stream: No such file or directory in /home/jsfivnhi/grandsmart.shop/system/startup.php on line 78
+[20-Oct-2023 18:24:19 Europe/Helsinki] PHP Warning:  include_once(): Failed opening '/home/jsfivnhi/ocartdataxx/storage/modification/system/library/config.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/jsfivnhi/grandsmart.shop/system/startup.php on line 78
+[20-Oct-2023 18:24:19 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Class 'Config' not found in /home/jsfivnhi/grandsmart.shop/system/framework.php:6
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/startup.php(104): require_once()
+#1 /home/jsfivnhi/grandsmart.shop/admin/index.php(19): start('admin')
+#2 {main}
+  thrown in /home/jsfivnhi/grandsmart.shop/system/framework.php on line 6
+[26-Oct-2023 15:43:45 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not make a database link using jsfivnhi_grandsmartshop@localhost! in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:19
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'jsfivnhi_grands...', 'u6jV72EF8hDM6nn', 'jsfivnhi_grands...', '3306')
+#1 /home/jsfivnhi/grandsmart.shop/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'jsfivnhi_grands...', 'u6jV72EF8hDM6nn', 'jsfivnhi_grands...', '3306')
+#2 /home/jsfivnhi/grandsmart.shop/system/startup.php(104): require_once('/home/jsfivnhi/...')
+#3 /home/jsfivnhi/grandsmart.shop/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 19
+[26-Oct-2023 15:43:47 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not make a database link using jsfivnhi_grandsmartshop@localhost! in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:19
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'jsfivnhi_grands...', 'u6jV72EF8hDM6nn', 'jsfivnhi_grands...', '3306')
+#1 /home/jsfivnhi/grandsmart.shop/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'jsfivnhi_grands...', 'u6jV72EF8hDM6nn', 'jsfivnhi_grands...', '3306')
+#2 /home/jsfivnhi/grandsmart.shop/system/startup.php(104): require_once('/home/jsfivnhi/...')
+#3 /home/jsfivnhi/grandsmart.shop/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 19
+[26-Oct-2023 15:43:49 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not make a database link using jsfivnhi_grandsmartshop@localhost! in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:19
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'jsfivnhi_grands...', 'u6jV72EF8hDM6nn', 'jsfivnhi_grands...', '3306')
+#1 /home/jsfivnhi/grandsmart.shop/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'jsfivnhi_grands...', 'u6jV72EF8hDM6nn', 'jsfivnhi_grands...', '3306')
+#2 /home/jsfivnhi/grandsmart.shop/system/startup.php(104): require_once('/home/jsfivnhi/...')
+#3 /home/jsfivnhi/grandsmart.shop/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 19
+[26-Oct-2023 15:43:49 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not make a database link using jsfivnhi_grandsmartshop@localhost! in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:19
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'jsfivnhi_grands...', 'u6jV72EF8hDM6nn', 'jsfivnhi_grands...', '3306')
+#1 /home/jsfivnhi/grandsmart.shop/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'jsfivnhi_grands...', 'u6jV72EF8hDM6nn', 'jsfivnhi_grands...', '3306')
+#2 /home/jsfivnhi/grandsmart.shop/system/startup.php(104): require_once('/home/jsfivnhi/...')
+#3 /home/jsfivnhi/grandsmart.shop/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 19
+[01-Dec-2023 18:25:16 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Cart\Customer' not found in /home/jsfivnhi/grandsmart.shop/admin/controller/startup/startup.php:39
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupStartup->index()
+#1 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/router.php(57): Router->execute(Object(Action))
+#3 /home/jsfivnhi/grandsmart.shop/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#4 /home/jsfivnhi/grandsmart.shop/system/startup.php(104): require_once('/home/jsfivnhi/...')
+#5 /home/jsfivnhi/grandsmart.shop/admin/index.php(19): start('admin')
+#6 {main}
+  thrown in /home/jsfivnhi/grandsmart.shop/admin/controller/startup/startup.php on line 39
+[28-Dec-2023 16:28:12 Europe/Helsinki] PHP Warning:  include_once(/home/jsfivnhi/ocartdataxx/storage/modification/system/library/config.php): failed to open stream: No such file or directory in /home/jsfivnhi/grandsmart.shop/system/startup.php on line 78
+[28-Dec-2023 16:28:12 Europe/Helsinki] PHP Warning:  include_once(): Failed opening '/home/jsfivnhi/ocartdataxx/storage/modification/system/library/config.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/jsfivnhi/grandsmart.shop/system/startup.php on line 78
+[28-Dec-2023 16:28:12 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Class 'Config' not found in /home/jsfivnhi/grandsmart.shop/system/framework.php:6
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/startup.php(104): require_once()
+#1 /home/jsfivnhi/grandsmart.shop/admin/index.php(19): start('admin')
+#2 {main}
+  thrown in /home/jsfivnhi/grandsmart.shop/system/framework.php on line 6
+[05-Jan-2024 10:53:11 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[05-Jan-2024 10:53:11 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[05-Jan-2024 10:53:20 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[05-Jan-2024 10:54:06 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[05-Jan-2024 10:54:13 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[05-Jan-2024 10:54:39 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[05-Jan-2024 10:58:23 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[05-Jan-2024 10:58:23 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[05-Jan-2024 11:08:54 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[05-Jan-2024 11:08:54 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[05-Jan-2024 11:13:25 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[06-Jan-2024 11:25:12 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[06-Jan-2024 11:25:12 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 11:25:17 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 11:25:45 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 11:26:00 Europe/Kiev] PHP Fatal error:  The file /home/jsfivnhi/grandsmart.shop/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[06-Jan-2024 11:26:02 Europe/Kiev] PHP Fatal error:  The file /home/jsfivnhi/grandsmart.shop/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[06-Jan-2024 11:26:03 Europe/Kiev] PHP Fatal error:  The file /home/jsfivnhi/grandsmart.shop/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[06-Jan-2024 11:27:01 Europe/Kiev] PHP Fatal error:  The file /home/jsfivnhi/grandsmart.shop/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[06-Jan-2024 11:27:34 Europe/Kiev] PHP Fatal error:  The file /home/jsfivnhi/grandsmart.shop/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[06-Jan-2024 11:28:41 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home/jsfivnhi/grandsmart.shop/admin/model/tool/image.php:42
+Stack trace:
+#0 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelToolImage->resize('profile.png', 45, 45)
+#1 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/common/header.php(164): Proxy->__call('resize', Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/marketplace/modification.php(794): Loader->controller('common/header')
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/marketplace/modification.php(27): ControllerMarketplaceModification->getList()
+#7 /home/jsf in /home/jsfivnhi/grandsmart.shop/admin/model/tool/image.php on line 42
+[06-Jan-2024 11:48:28 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[06-Jan-2024 11:48:28 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 11:48:31 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 11:49:11 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:04:56 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[06-Jan-2024 12:04:56 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:10:27 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[06-Jan-2024 12:10:27 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:16:10 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[06-Jan-2024 12:16:10 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:16:39 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:17:44 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[06-Jan-2024 12:17:44 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:17:47 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:17:48 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:17:48 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:17:48 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:17:48 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:17:51 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:19:40 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[06-Jan-2024 12:19:44 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:19:47 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:20:25 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:20:27 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:20:33 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:21:05 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:21:15 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:21:28 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:23:50 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[06-Jan-2024 12:23:50 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:28:45 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[06-Jan-2024 12:28:45 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:32:33 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[06-Jan-2024 12:32:33 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:32:40 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[06-Jan-2024 12:33:21 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[07-Jan-2024 09:38:29 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[07-Jan-2024 09:38:29 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/grandsmart.shop/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/grandsmart.shop/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/grandsmart.shop/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[07-Jan-2024 09:38:33 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/grandsmart.shop/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/grandsmart.shop/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/grandsmart.shop/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[07-Jan-2024 18:15:05 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[07-Jan-2024 18:15:05 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[08-Jan-2024 14:03:41 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[08-Jan-2024 14:03:41 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[08-Jan-2024 14:03:45 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[08-Jan-2024 14:04:28 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[08-Jan-2024 14:05:28 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[08-Jan-2024 14:05:57 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[08-Jan-2024 14:05:59 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[08-Jan-2024 14:11:20 Europe/Kiev] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php on line 2358
+[08-Jan-2024 14:11:20 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[08-Jan-2024 14:11:37 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[08-Jan-2024 14:11:43 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.oc_product' doesn't exist<br />Error No: 1146<br />ALTER TABLE `oc_product` ENGINE = INNODB in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE `oc...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(1033): DB->query('ALTER TABLE `oc...')
+#2 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleExchange1c->install(Array)
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/jsfivnhi/ocartdataxx/storage/modification/admin/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/jsfivnhi/grandsmart.shop/admin/contro in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[08-Jan-2024 14:11:59 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Table 'jsfivnhi_grandsmartshop.ocri_product_feature_value' doesn't exist<br />Error No: 1146<br />SHOW COLUMNS FROM `ocri_product_feature_value` WHERE `field` = 'date_modified' in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/jsfivnhi/grandsmart.shop/system/library/db.php(45): DB\MySQLi->query('SHOW COLUMNS FR...')
+#1 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8591): DB->query('SHOW COLUMNS FR...')
+#2 /home/jsfivnhi/grandsmart.shop/admin/model/extension/exchange1c.php(8516): ModelExtensionExchange1c->update_1_6_4_2()
+#3 /home/jsfivnhi/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelExtensionExchange1c->checkUpdates(Array)
+#4 /home/jsfivnhi/grandsmart.shop/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module/exchange1c.php(360): Proxy->__call('checkUpdates', Array)
+#6 /home/jsfivnhi/ocartdataxx/storage/modification/system/eng in /home/jsfivnhi/grandsmart.shop/system/library/db/mysqli.php on line 48
+[03-Mar-2024 11:51:21 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[03-Mar-2024 11:51:41 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[03-Mar-2024 11:55:55 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[03-Mar-2024 12:01:18 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[03-Mar-2024 12:01:21 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[03-Mar-2024 12:01:45 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[03-Mar-2024 12:05:23 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[03-Mar-2024 12:05:25 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[03-Mar-2024 12:05:44 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[03-Mar-2024 13:01:53 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[03-Mar-2024 13:01:55 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[03-Mar-2024 13:05:06 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Could not load template /home/gaxjmkdt/public_html/admin/view/template/extension/payment/privatbank.twig! in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php:21
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/template.php(51): Template\Twig->render('extension/payme...', '')
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(125): Template->render('extension/payme...', '')
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/payment/privatbank.php(111): Loader->view('extension/payme...', Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionPaymentPrivatbank->index()
+#4 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.ph in /home/gaxjmkdt/ocartdataxx/storage/modification/system/library/template/twig.php on line 21
+[05-Mar-2024 22:35:29 Europe/Helsinki] PHP Warning:  require_once(/home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php): failed to open stream: No such file or directory in /home/gaxjmkdt/public_html/system/startup.php on line 90
+[05-Mar-2024 22:35:29 Europe/Helsinki] PHP Fatal error:  require_once(): Failed opening required '/home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/gaxjmkdt/public_html/system/startup.php on line 90
+[07-Mar-2024 23:09:27 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'SoapClient' not found in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php:16
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/ocdsms.php(43): Turbosms->send()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocd_sms_notify.php(525): OcdSms->send()
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOcdSmsNotify->sendSms()
+#3 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(67): Router->execute(Object(Action))
+#7 /home/gaxjmkdt/public_html/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#8 /home/gaxjmkdt/public_ in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php on line 16
+[07-Mar-2024 23:15:51 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'SoapClient' not found in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php:16
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/ocdsms.php(43): Turbosms->send()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocd_sms_notify.php(525): OcdSms->send()
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOcdSmsNotify->sendSms()
+#3 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(67): Router->execute(Object(Action))
+#7 /home/gaxjmkdt/public_html/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#8 /home/gaxjmkdt/public_ in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php on line 16
+[07-Mar-2024 23:18:19 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'SoapClient' not found in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php:16
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/ocdsms.php(43): Turbosms->send()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocd_sms_notify.php(525): OcdSms->send()
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOcdSmsNotify->sendSms()
+#3 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(67): Router->execute(Object(Action))
+#7 /home/gaxjmkdt/public_html/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#8 /home/gaxjmkdt/public_ in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php on line 16
+[07-Mar-2024 23:26:49 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'SoapClient' not found in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php:16
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/ocdsms.php(43): Turbosms->send()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocd_sms_notify.php(525): OcdSms->send()
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOcdSmsNotify->sendSms()
+#3 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(67): Router->execute(Object(Action))
+#7 /home/gaxjmkdt/public_html/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#8 /home/gaxjmkdt/public_ in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php on line 16
+[08-Mar-2024 13:49:14 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'SoapClient' not found in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php:16
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/ocdsms.php(43): Turbosms->send()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocd_sms_notify.php(575): OcdSms->send()
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOcdSmsNotify->sendSmsMass()
+#3 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(67): Router->execute(Object(Action))
+#7 /home/gaxjmkdt/public_html/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#8 /home/gaxjmkdt/pub in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php on line 16
+[08-Mar-2024 14:24:30 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'SoapClient' not found in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php:16
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/ocdsms.php(43): Turbosms->send()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocd_sms_notify.php(525): OcdSms->send()
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOcdSmsNotify->sendSms()
+#3 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(67): Router->execute(Object(Action))
+#7 /home/gaxjmkdt/public_html/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#8 /home/gaxjmkdt/public_ in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php on line 16
+[08-Mar-2024 14:24:53 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'SoapClient' not found in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php:16
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/ocdsms.php(43): Turbosms->send()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocd_sms_notify.php(525): OcdSms->send()
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOcdSmsNotify->sendSms()
+#3 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(67): Router->execute(Object(Action))
+#7 /home/gaxjmkdt/public_html/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#8 /home/gaxjmkdt/public_ in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php on line 16
+[08-Mar-2024 14:27:40 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'SoapClient' not found in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php:16
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/ocdsms.php(43): Turbosms->send()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocd_sms_notify.php(575): OcdSms->send()
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOcdSmsNotify->sendSmsMass()
+#3 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(67): Router->execute(Object(Action))
+#7 /home/gaxjmkdt/public_html/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#8 /home/gaxjmkdt/pub in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php on line 16
+[08-Mar-2024 14:29:03 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'SoapClient' not found in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php:16
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/ocdsms.php(43): Turbosms->send()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocd_sms_notify.php(525): OcdSms->send()
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOcdSmsNotify->sendSms()
+#3 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(67): Router->execute(Object(Action))
+#7 /home/gaxjmkdt/public_html/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#8 /home/gaxjmkdt/public_ in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php on line 16
+[08-Mar-2024 15:19:45 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'SoapClient' not found in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php:16
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/ocdsms.php(43): Turbosms->send()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocd_sms_notify.php(525): OcdSms->send()
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOcdSmsNotify->sendSms()
+#3 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(67): Router->execute(Object(Action))
+#7 /home/gaxjmkdt/public_html/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#8 /home/gaxjmkdt/public_ in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php on line 16
+[08-Mar-2024 15:20:39 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'SoapClient' not found in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php:16
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/ocdsms.php(43): Turbosms->send()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocd_sms_notify.php(525): OcdSms->send()
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOcdSmsNotify->sendSms()
+#3 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(78): Action->execute(Object(Registry))
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/router.php(67): Router->execute(Object(Action))
+#7 /home/gaxjmkdt/public_html/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#8 /home/gaxjmkdt/public_ in /home/gaxjmkdt/public_html/system/library/smsgate/turbosms.php on line 16
+[03-May-2024 18:31:18 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function editSetting() on null in /home/gaxjmkdt/public_html/admin/controller/extension/module/ocfilter/setting.php:8
+Stack trace:
+#0 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocfilter/setting.php(8): Setting->{closure}()
+#1 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocfilter/setting.php(8): Setting->F6d342ac5c9a602c97(Array)
+#2 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocfilter/setting.php(8): Setting->gF5LTC3Q7VvIL1wR(Array)
+#3 /home/gaxjmkdt/public_html/admin/controller/extension/module/ocfilter.php(21): Setting->__call('Ae55cc7385415b2...', Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerExtensionModuleOCFilter->copy()
+#5 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#7 /home/gaxjmkdt/ocartdatax in /home/gaxjmkdt/public_html/admin/controller/extension/module/ocfilter/setting.php on line 8
+[10-May-2024 11:40:08 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[10-May-2024 22:55:52 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[10-May-2024 22:56:14 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[10-May-2024 22:57:05 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[10-May-2024 22:57:53 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[11-May-2024 15:02:12 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[11-May-2024 15:02:21 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[11-May-2024 15:02:42 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[11-May-2024 15:08:53 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Controllertoolchatgptpro' not found in /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php:71
+Stack trace:
+#0 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/admin/controller/common/header.php(121): Loader->controller('tool/chatgpt_pr...', 'sale/order')
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/admin/controller/sale/order.php(432): Loader->controller('common/header')
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/admin/controller/sale/order.php(12): ControllerSaleOrder->getList()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerSaleOrder->index()
+#7 /home/g in /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php on line 71
+[11-May-2024 15:11:03 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Controllertoolchatgptpro' not found in /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php:71
+Stack trace:
+#0 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/admin/controller/common/header.php(121): Loader->controller('tool/chatgpt_pr...', 'sale/order')
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/ocartdataxx/storage/modification/admin/controller/sale/order.php(432): Loader->controller('common/header')
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/admin/controller/sale/order.php(12): ControllerSaleOrder->getList()
+#6 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerSaleOrder->index()
+#7 /home/g in /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php on line 71
+[11-May-2024 15:13:48 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Controllertoolchatgptpro' not found in /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php:71
+Stack trace:
+#0 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/admin/controller/common/header.php(121): Loader->controller('tool/chatgpt_pr...', 'common/dashboar...')
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/public_html/admin/controller/common/dashboard.php(89): Loader->controller('common/header')
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerCommonDashboard->index()
+#6 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#7 /home/gaxjmkdt/o in /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php on line 71
+[11-May-2024 15:14:01 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[11-May-2024 15:14:21 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[11-May-2024 15:14:22 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[11-May-2024 15:16:01 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Controllertoolchatgptpro' not found in /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php:71
+Stack trace:
+#0 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/admin/controller/common/header.php(121): Loader->controller('tool/chatgpt_pr...', 'common/dashboar...')
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/public_html/admin/controller/common/dashboard.php(89): Loader->controller('common/header')
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerCommonDashboard->index()
+#6 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#7 /home/gaxjmkdt/o in /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php on line 71
+[11-May-2024 15:18:11 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[11-May-2024 15:18:19 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Controllertoolchatgptpro' not found in /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php:71
+Stack trace:
+#0 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#1 /home/gaxjmkdt/ocartdataxx/storage/modification/admin/controller/common/header.php(121): Loader->controller('tool/chatgpt_pr...', 'common/dashboar...')
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#3 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/gaxjmkdt/public_html/admin/controller/common/dashboard.php(89): Loader->controller('common/header')
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79): ControllerCommonDashboard->index()
+#6 /home/gaxjmkdt/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#7 /home/gaxjmkdt/o in /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php on line 71
+[11-May-2024 15:18:48 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[11-May-2024 15:19:13 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0
+[11-May-2024 15:21:15 Europe/Kiev] PHP Fatal error:  The file /home/gaxjmkdt/public_html/system/library/chatgpt/chatgpt_pro7.php encoded as type [1/74] cannot be decoded by this version of the ionCube Loader.
+ in Unknown on line 0

@@ -1,0 +1,127 @@
+	{% if result %}
+	<div class="modal-body">
+		<div class="table-responsive">
+			<table class="table table-striped table-hover">
+			{% if result.order_id %}
+				<tr><td><b>{{ text_info_order_id }}</b></td><td>{{ result.order_id }} {% if result.order_link %}<a href="{{ result.order_link }}" target="_blank">{{ text_view_order }}</a>{% endif %}</td></tr>
+			{% endif %}
+			{% if result.orderReference %}
+				<tr><td><b>{{ text_info_payment_id }}</b></td><td>{{ result.orderReference }}</td></tr>
+			{% endif %}
+			{% if result.status %}
+				<tr><td><b>{{ text_info_status }}</b></td><td>{{ result.status }}</td></tr>
+			{% endif %}
+			{% if result.amount %}
+				<tr><td><b>{{ text_info_amount }}</b></td><td>{{ result.amount }}</td></tr>
+			{% endif %}
+			{% if result.currency %}
+				<tr><td><b>{{ text_info_currency }}</b></td><td>{{ result.currency }}</td></tr>
+			{% endif %}
+			{% if result.paytype %}
+				<tr><td><b>{{ text_info_paytype }}</b></td><td>{{ result.paytype }}</td></tr>
+			{% endif %}
+			{% if result.sender_phone %}
+				<tr><td><b>{{ text_info_sender_phone }}</b></td><td>{{ result.sender_phone }}</td></tr>
+			{% endif %}
+			{% if result.email %}
+				<tr><td><b>{{ text_info_email }}</b></td><td>{{ result.email }}</td></tr>
+			{% endif %}
+			{% if result.create_date %}
+				<tr><td><b>{{ text_info_create_date }}</b></td><td>{{ result.create_date }}</td></tr>
+			{% endif %}	
+			{% if result.processing_date %}
+				<tr><td><b>{{ text_info_end_date }}</b></td><td>{{ result.processing_date }}</td></tr>
+			{% endif %}
+			</table>
+		</div>	
+    </div>
+	{% if result.end_date %}
+      <div class="modal-footer">
+		<div class="col-sm-6">
+			<div class="form-group" style="padding: 0;">
+				<span style="display:block;float:left;padding:7px 0;font-size:13px;font-weight:600;color:red;">
+					{{ text_write_off }}
+				</span>
+				<input type="text" name="amount_transaction" value="{{ result.amount }}" placeholder="Заказ №" id="input-amount" class="form-control" style="float:left;max-width:110px;margin-left:10px" />
+			</div>
+		</div>
+        <button type="button" class="btn btn-success" id="applywfp" data-id="{{ result.orderReference }}">{{ text_apply_pay }}</button>
+        <button type="button" class="btn btn-danger" id="cancelwfp" data-id="{{ result.orderReference }}">{{ text_cancel_pay }}</button>
+      </div>
+	{% endif %}
+	{% else %}
+	<div class="modal-body">
+		{{ text_empty }}
+	</div>
+	{% endif %}
+	<script>
+		$('#applywfp').on('click', function() {
+			var id = $(this).attr('data-id');
+			var amount = parseFloat($('#input-amount').val());
+
+			$.ajax({
+				url: 'index.php?route=sale/wfp/successPay&user_token={{ user_token }}&amount=' + encodeURIComponent(amount) + '&id=' + encodeURIComponent(id),
+				dataType: 'json',
+				beforeSend: function() {
+					$('#applywfp').button('loading');
+				},
+				complete: function() {
+					$('#applywfp').button('reset');
+				},
+				success: function(json) {
+					$('.alert').remove();
+					
+					if(json['error']) {
+						$('.modal-footer').before('<div class="col-sm-12"><div class="alert alert-danger" style="margin-top: 10px;">' + json['error'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div></div>');
+					}
+					
+					if(json['success']) {
+						if($('a').is('#get-info-lqp')) {
+							$('.alert').remove();
+							
+							$('.container-fluid>.row').before('<div class="alert alert-success">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+							
+							$('#info-modal').modal('hide');
+						} else {
+							location.href = location.href;
+						}
+					}	
+				}
+			});	
+		});		
+		
+		$('#cancelwfp').on('click', function() {
+			var id = $(this).attr('data-id');
+			var amount = parseFloat($('#input-amount').val());
+
+			$.ajax({
+				url: 'index.php?route=sale/wfp/refundPay&user_token={{ user_token }}&amount=' + encodeURIComponent(amount) + '&id=' + encodeURIComponent(id),
+				dataType: 'json',
+				beforeSend: function() {
+					$('#cancelwfp').button('loading');
+				},
+				complete: function() {
+					$('#cancelwfp').button('reset');
+				},
+				success: function(json) {
+					$('.alert').remove();
+					
+					if(json['error']) {
+						$('.modal-footer').before('<div class="col-sm-12"><div class="alert alert-danger" style="margin-top: 10px;">' + json['error'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div></div>');
+					}
+					
+					if(json['success']) {
+						if($('a').is('#get-info-lqp')) {
+							$('.alert').remove();
+							
+							$('.container-fluid>.row').before('<div class="alert alert-success">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+							
+							$('#info-modal').modal('hide');
+						} else {
+							location.href = location.href;
+						}
+					}	
+				}
+			});	
+		});
+	</script>

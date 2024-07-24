@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<modification>
+
+	<name>Uni SeoPro oc3</name>
+	<code>Uni.SeoPro.oc3</code>
+    <version>1.0</version>
+    <author>opencart-3x.ru</author>
+	<link>https://opencart-3x.ru/</link>
+	
+	
+	
+		
+	<file path="system/library/pagination.php">
+		<operation>
+			<search><![CDATA[if ($num_pages > 1)]]></search>
+			<add position="before"><![CDATA[
+		$output = str_replace('page-{page}', '',$output);
+			]]></add>
+		</operation>
+	</file>
+
+	<file path="catalog/controller/startup/seo_url.php">
+		<operation>
+			<search><![CDATA[public function index() {]]></search>
+			<add position="before"><![CDATA[
+	private $uni_seo_pro;
+	
+	public function __construct($registry) {
+		parent::__construct($registry);	
+		$this->uni_seo_pro = new UniSeoPro($registry);
+	}
+			]]></add>
+		</operation>
+
+		<operation>
+			<search><![CDATA[if ($data) {]]></search>
+			<add position="after"><![CDATA[
+				$url = $this->uni_seo_pro->getPage($url,$data);
+	]]></add>
+		</operation>
+
+		<operation>
+			<search><![CDATA[$parts = explode('/', $this->request->get['_route_']);]]></search>
+			<add position="after"><![CDATA[
+			$parts = $this->uni_seo_pro->prepareRoute();
+	]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$this->request->get['route'] = 'information/information';]]></search>
+			<add position="after" offset="3"><![CDATA[
+			$this->uni_seo_pro->validate();
+	]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[parse_str($url_info['query'], $data);]]></search>
+			<add position="after"><![CDATA[
+			$url = $this->uni_seo_pro->rewrite($data);
+	]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[return $url_info['scheme']]]></search>
+			<add position="before"><![CDATA[
+			if ($url === true) $url = '';
+	]]></add>
+		</operation>
+	</file>
+
+	<file path="catalog/controller/common/language.php">
+		<operation>
+			<search><![CDATA[$data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);]]></search>
+			<add position="replace"><![CDATA[$redirect_data = ['route' => $route, 'url' => $url, 'protocol' => $this->request->server['HTTPS']];
+				$data['redirect'] = base64_encode(json_encode($redirect_data));
+]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[public function language() {]]></search>
+			<add position="replace"><![CDATA[
+	private function Uni_seo_pro_language() {
+		if (isset($this->request->post['code'])) {
+			$this->session->data['language'] = $this->request->post['code'];
+			$languages = $this->model_localisation_language->getLanguages();
+			if (isset($languages[$this->request->post['code']])) {
+				$this->config->set('config_language_id', $languages[$this->request->post['code']]['language_id']);	
+			}
+		}
+
+		if (isset($this->request->post['redirect'])) {
+			$redirect = json_decode(base64_decode($this->request->post['redirect']), true);
+			if (isset($redirect['route']) && isset($redirect['url']) && isset($redirect['protocol'])) {
+				$redirect_url = $this->url->link($redirect['route'], $redirect['url'], $redirect['protocol']);
+			} else {
+				$redirect_url = $this->url->link('common/home');
+			}
+			$this->response->redirect($redirect_url);
+		} else {
+			$this->response->redirect($this->url->link('common/home'));
+		}
+	}
+			
+	public function language() {
+		$this->Uni_seo_pro_language();
+]]></add>
+		</operation>
+	</file>
+</modification>

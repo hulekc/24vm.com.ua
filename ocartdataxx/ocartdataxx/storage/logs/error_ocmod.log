@@ -1,0 +1,252 @@
+2023-11-20 4:57:56 - 
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/admin/controller/common/menu.php
+MOD: OCFilter Modification
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/admin/controller/extension/module.php
+MOD: OCFilter Modification
+
+ERROR: CODE NOT FOUND!
+FILE: admin/controller/design/layout.php
+CODE: 'module/' . $code
+MOD: OCFilter Modification
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/admin/view/template/common/menu.tpl
+MOD: OCFilter Modification
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/catalog/view/theme/*/template/product/category.tpl
+MOD: OCFilter Modification
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/catalog/view/theme/*/template/product/{category,search,manufacturer,special}.tpl
+MOD: OCFilter Modification
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/catalog/view/theme/*/template/product/product.tpl
+MOD: OCFilter Modification
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/system/library/seopro.php
+MOD: OCFilter Modification
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/admin/view/template/common/header.tpl
+MOD: DEV-OPENCART.COM — CKEditor + Автосохранение + Загрузка произвольных  типов файлов
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/system/library/seopro.php
+MOD: SEO URL Generator
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/catalog/controller/extension/module/{blog_latest,blog_featured,featured_article,featured_product}.php
+MOD: Unis template
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/catalog/controller/blog/*.php
+MOD: Unis template
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/system/library/seopro.php
+MOD: Unis template
+
+ERROR: FILE NOT FOUND!
+FILE: /home/jsfivnhi/grandsmart.shop/system/library/journal3/cache.php
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/en-gb/common/footer.php
+CODE: http://opencart.pro/
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://opencart.pro/
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://opencart.pro/
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/en-gb/common/footer.php
+CODE: http://myopencart.com/
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://myopencart.com/
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://myopencart.com/
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://www.opencart.com
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://www.opencart.com
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/en-gb/common/footer.php
+CODE: http://lowenet.biz/
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://lowenet.biz/
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://lowenet.biz/
+MOD: WebP Image
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/view/theme/unishop2/template/product/product.twig
+CODE: $('#review').load('index.php?route=product/product/review&product_id={{ product_id }}');
+MOD: Відгуки з фото та відео
+
+ERROR: CODE NOT FOUND!
+FILE: admin/view/template/common/footer.twig
+CODE: <footer id="footer">{{ text_footer }}<br />{{ text_version }}</footer></div>
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/en-gb/common/footer.php
+CODE: http://opencart.pro/
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://opencart.pro/
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://opencart.pro/
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/en-gb/common/footer.php
+CODE: http://myopencart.com/
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://myopencart.com/
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://myopencart.com/
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/en-gb/common/footer.php
+CODE: http://www.opencart.com
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://www.opencart.com
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://www.opencart.com
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/en-gb/common/footer.php
+CODE: http://lowenet.biz/
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://lowenet.biz/
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://lowenet.biz/
+MOD: Очищення кешу та логів в один клік
+
+ERROR: CODE NOT FOUND!
+FILE: admin/controller/common/filemanager.php
+CODE: $files = glob($directory . '/' . $filter_name . '*.{jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF}', GLOB_BRACE);
+MOD: Розумні віджети відео/зображення
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/view/theme/unishop2/template/product/product.twig
+CODE: <ul class="nav nav-tabs">
+MOD: Таблиця розмірів
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/en-gb/common/footer.php
+CODE: http://opencart.pro/
+MOD: Товари в порядку додавання
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://opencart.pro/
+MOD: Товари в порядку додавання
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://opencart.pro/
+MOD: Товари в порядку додавання
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/en-gb/common/footer.php
+CODE: http://myopencart.com/
+MOD: Товари в порядку додавання
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://myopencart.com/
+MOD: Товари в порядку додавання
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://myopencart.com/
+MOD: Товари в порядку додавання
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/en-gb/common/footer.php
+CODE: http://www.opencart.com
+MOD: Товари в порядку додавання
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://www.opencart.com
+MOD: Товари в порядку додавання
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://www.opencart.com
+MOD: Товари в порядку додавання
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/en-gb/common/footer.php
+CODE: http://lowenet.biz/
+MOD: Товари в порядку додавання
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: http://lowenet.biz/
+MOD: Товари в порядку додавання
+
+ERROR: CODE NOT FOUND!
+FILE: catalog/language/uk-ua/common/footer.php
+CODE: http://lowenet.biz/
+MOD: Товари в порядку додавання

@@ -1,0 +1,16 @@
+[25-Jun-2024 20:54:28 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Unknown column 'price' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `ocri_cart` WHERE api_id = '792574394' AND customer_id = '1' AND session_id = '0c1e98ae4dacf93ba80fb804f6' AND product_id = '1074' AND recurring_id = '0' AND `option` = '[]' AND price = '135' in /home/gaxjmkdt/public_html/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(*)...')
+#1 /home/gaxjmkdt/public_html/catalog/model/checkout/recalculate.php(111): DB->query('SELECT COUNT(*)...')
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelCheckoutRecalculate->cartAdd('1074', 1, Array, 0, 0, '135.00')
+#3 /home/gaxjmkdt/public_html/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/gaxjmkdt/public_html/catalog/controller/checkout/recalculate.php(644): Proxy->__call('cartAdd', Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79 in /home/gaxjmkdt/public_html/system/library/db/mysqli.php on line 48
+[25-Jun-2024 21:03:40 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Error: Unknown column 'price' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `ocri_cart` WHERE api_id = '876668093' AND customer_id = '1' AND session_id = '0c1e98ae4dacf93ba80fb804f6' AND product_id = '1074' AND recurring_id = '0' AND `option` = '[]' AND price = '135' in /home/gaxjmkdt/public_html/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/gaxjmkdt/public_html/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(*)...')
+#1 /home/gaxjmkdt/public_html/catalog/model/checkout/recalculate.php(111): DB->query('SELECT COUNT(*)...')
+#2 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/loader.php(248): ModelCheckoutRecalculate->cartAdd('1074', 1, Array, 0, 0, '135.00')
+#3 /home/gaxjmkdt/public_html/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/gaxjmkdt/public_html/catalog/controller/checkout/recalculate.php(644): Proxy->__call('cartAdd', Array)
+#5 /home/gaxjmkdt/ocartdataxx/storage/modification/system/engine/action.php(79 in /home/gaxjmkdt/public_html/system/library/db/mysqli.php on line 48

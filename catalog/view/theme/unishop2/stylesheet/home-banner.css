@@ -1,0 +1,5 @@
+.home-banner{display:flex;margin:5px -10px 10px}
+.home-banner > div{display:flex}
+.home-banner__item:hover:after{transform:scale(1)}
+.home-banner__image{width:auto;height:auto;max-width:55px;max-height:55px}
+.home-banner__text{display:flex;flex-direction:column;justify-content:space-evenly;height:100%;padding:0 0 0 15px;color:var(--home-banner-text-c);word-wrap:break-word}

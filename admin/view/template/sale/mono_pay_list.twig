@@ -1,0 +1,331 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button id="button-load-mono-pay" data-toggle="tooltip" title="{{ button_load_list }}" class="btn btn-success"><i class="fa fa-refresh"></i></button>
+      </div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+	{% if error_warning %}
+    <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+	{% if success %}
+    <div class="alert alert-success"><i class="fa fa-check-circle"></i> {{ success }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+	{% if alert_info %}
+    <div class="alert alert-info"><i class="fa fa-check-circle"></i> {{ alert_info }}
+    </div>
+    {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-list"></i> {{ text_list }}</h3>
+      </div>
+      <div class="panel-body">
+        <div class="well">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label class="control-label" for="input-order-id">{{ entry_order_id }}</label>
+                <input type="text" name="filter_order_id" value="{{ filter_order_id }}" placeholder="{{ entry_order_id }}" id="input-order-id" class="form-control" />
+              </div>
+              <div class="form-group"> 
+                <label class="control-label" for="input-customer">{{ entry_transaction }}</label>
+                <input type="text" name="filter_transaction" value="{{ filter_transaction }}" placeholder="{{ entry_transaction }}" id="input-customer" class="form-control" />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label class="control-label" for="input-order-status">{{ entry_order_status }}</label>
+                <select name="filter_order_status" id="input-order-status" class="form-control">
+                  <option value="*"></option>
+				  {% for order_status in order_statuses %}
+				  {% if order_status.order_status_id == filter_order_status %}
+                  <option value="{{ order_status.order_status_id }}" selected="selected">{{ order_status.name }}</option>
+                  {% else %}
+                  <option value="{{ order_status.order_status_id }}">{{ order_status.name }}</option>
+                  {% endif %}
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="input-total">{{ entry_amount }}</label>
+                <input type="text" name="filter_total" value="{{ filter_total }}" placeholder="{{ entry_amount }}" id="input-total" class="form-control" />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label class="control-label" for="input-date-added">{{ entry_date_added }}</label>
+                <div class="input-group date">
+                  <input type="text" name="filter_date_added" value="{{ filter_date_added }}" placeholder="{{ entry_date_added }}" data-date-format="YYYY-MM-DD" id="input-date-added" class="form-control" />
+                  <span class="input-group-btn">
+                  <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                  </span></div>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="input-date-modified">{{ entry_date_modified }}</label>
+                <div class="input-group date">
+                  <input type="text" name="filter_date_modified" value="{{ filter_date_modified }}" placeholder="{{ entry_date_modified }}" data-date-format="YYYY-MM-DD" id="input-date-modified" class="form-control" />
+                  <span class="input-group-btn">
+                  <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                  </span></div>
+              </div>
+              <button type="button" id="button-filter" class="btn btn-primary pull-right"><i class="fa fa-filter"></i> {{ button_filter }}</button>
+            </div>
+          </div>
+        </div>
+        <form method="post" action="" enctype="multipart/form-data" id="form-order">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <td class="text-left">{% if sort == 'order_id' %}
+                    <a href="{{ sort_order }}" class="{{ order|lower }}">{{ column_order_id }}</a>
+                    {% else %}
+                    <a href="{{ sort_order }}">{{ column_order_id }}</a>
+                    {% endif %}</td>
+				  <td class="text-left">{{ column_pay_id }}</td>
+                  <td class="text-left">{% if sort == 'status' %}
+                    <a href="{{ sort_status }}" class="{{ order|lower }}">{{ column_status }}</a>
+                    {% else %}
+                    <a href="{{ sort_status }}">{{ column_status }}</a>
+                    {% endif %}</td>
+                  <td class="text-left">{% if sort == 'amount' %}
+                    <a href="{{ sort_total }}" class="{{ order|lower }}">{{ column_total }}</a>
+                    {% else %}
+                    <a href="{{ sort_total }}">{{ column_total }}</a>
+                    {% endif %}</td>                  
+					<td class="text-left">{% if sort == 'profit' %}
+                    <a href="{{ sort_profit }}" class="{{ order|lower }}">{{ column_profit }}</a>
+                    {% else %}
+                    <a href="{{ sort_profit }}">{{ column_profit }}</a>
+                    {% endif %}</td>
+                  <td class="text-left">{% if sort == 'create_date' %}
+                    <a href="{{ sort_date_added }}" class="{{ order|lower }}">{{ column_date_added }}</a>
+                    {% else %}
+                    <a href="{{ sort_date_added }}">{{ column_date_added }}</a>
+                    {% endif %}</td>
+                  <td class="text-right">{{ column_action }}</td>
+                </tr>
+              </thead>
+              <tbody>
+                {% if operations %}
+				{% for operation in operations %}
+                <tr>
+                  <td class="text-left">{{ operation.reference }}</td>
+                  <td class="text-left">{{ operation.invoiceId }}</td>
+                  <td class="text-left">{{ operation.status }}</td>
+                  <td class="text-left">{{ operation.amount }}</td>
+                  <td class="text-left">{{ operation.profit }}</td>
+                  <td class="text-left">{{ operation.create_date }}</td>
+                  <td class="text-right"><button data-toggle="tooltip" title="{{ button_view_pay }}" data-invoice="{{ operation.invoiceId }}" data-pay="{{ operation.reference }}" data-show="{{ operation.reference }}" class="btn btn-info view-detail"><i class="fa fa-eye"></i></button></td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr>
+                  <td class="text-center" colspan="8">{{ text_no_results }}</td>
+                </tr>
+                {% endif %}
+              </tbody>
+            </table>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-sm-6 text-left">{{ pagination }}</div>
+          <div class="col-sm-6 text-right">{{ results }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<div class="modal fade" id="date-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Выберите дату выгрузки</h4>
+      </div>
+      <div class="modal-body">
+		<div class="row">
+			<div class="form-group col-sm-6">
+                <label class="control-label" for="input-date-from">Дата от</label>
+                <div class="input-group date-modal-from">
+                <input type="text" name="modal_date_from" value="{{ filter_date_added }}" placeholder="{{ entry_date_added }}" data-date-format="YYYY-MM-DD 00:00:00" id="input-date-from" class="form-control" />
+                <span class="input-group-btn">
+                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                </span></div>
+            </div>			
+			<div class="form-group col-sm-6">
+                <label class="control-label" for="input-date-to">Дата до</label>
+                <div class="input-group date-modal-to">
+                <input type="text" name="modal_date_to" placeholder="{{ entry_date_added }}" data-date-format="YYYY-MM-DD 23:59:59" id="input-date-to" class="form-control" />
+                <span class="input-group-btn">
+                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                </span></div>
+            </div>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="apply-date-mono-pay">{{ button_apply }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="info-modal-label"></h4>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript"><!--
+$('#button-filter').on('click', function() {
+	url = 'index.php?route=sale/mono_pay&user_token={{ user_token }}';
+
+	var filter_order_id = $('input[name=\'filter_order_id\']').val();
+
+	if (filter_order_id) {
+		url += '&filter_order_id=' + encodeURIComponent(filter_order_id);
+	}
+
+	var filter_customer = $('input[name=\'filter_customer\']').val();
+
+	if (filter_customer) {
+		url += '&filter_customer=' + encodeURIComponent(filter_customer);
+	}
+
+	var filter_total = $('input[name=\'filter_total\']').val();
+
+	if (filter_total) {
+		url += '&filter_total=' + encodeURIComponent(filter_total);
+	}
+
+	var filter_date_added = $('input[name=\'filter_date_added\']').val();
+
+	if (filter_date_added) {
+		url += '&filter_date_added=' + encodeURIComponent(filter_date_added);
+	}
+
+	var filter_date_modified = $('input[name=\'filter_date_modified\']').val();
+
+	if (filter_date_modified) {
+		url += '&filter_date_modified=' + encodeURIComponent(filter_date_modified);
+	}
+	
+	var filter_transaction = $('input[name=\'filter_transaction\']').val();
+
+	if (filter_transaction) {
+		url += '&filter_transaction=' + encodeURIComponent(filter_transaction);
+	}
+	
+	var filter_order_status = $('select[name=\'filter_order_status\']').val();
+
+	if (filter_order_status && filter_order_status != '*') {
+		url += '&filter_order_status=' + encodeURIComponent(filter_order_status);
+	}
+
+	location = url;
+});
+//--></script>
+  <script type="text/javascript"><!--  
+	$('#button-load-mono-pay').on('click', function() {
+		$('#date-modal').modal('show');
+	});
+	
+	$('#apply-date-mono-pay').on('click', function() {
+		var date_start = $('input[name=modal_date_from]').val();
+		var date_end = $('input[name=modal_date_to]').val();
+	
+		$('#date-modal').modal('hide');
+		$.ajax({
+			url: 'index.php?route=sale/mono_pay/getApiInfo&user_token={{ user_token }}&date_start=' + encodeURIComponent(date_start) + '&date_end=' + encodeURIComponent(date_end),
+			dataType: 'json',
+			beforeSend: function() {
+				$('#button-load-mono-pay>i').addClass('fa-spin');
+			},
+			complete: function() {
+				$('#button-load-mono-pay>i').removeClass('fa-spin');
+			},
+			success: function(json) {
+				$('.alert').remove();
+				
+				if(json['success']) {
+					location.href = location.href;
+				}	
+				
+				if(json['error']) {
+					$('.panel.panel-default').before('<div class="alert alert-danger">' + json['error'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+				}
+			}
+		});	
+	});	
+	
+	$('.view-detail').on('click', function() {
+		var tid = $(this).attr('data-pay');
+		var invoice = $(this).attr('data-invoice');
+		var show = $(this).attr('data-show');
+	
+		$.ajax({
+			url: 'index.php?route=sale/mono_pay/getPayInfo&user_token={{ user_token }}&invoice_id=' + encodeURIComponent(invoice),
+			dataType: 'html',
+			beforeSend: function() {
+				$('.view-detail[data-pay=' + tid + ']>i').removeClass('fa-eye').addClass('fa-spin fa-refresh');
+			},
+			complete: function() {
+				$('.view-detail[data-pay=' + tid + ']>i').removeClass('fa-spin fa-refresh').addClass('fa-eye');
+			},
+			success: function(html) {
+				$('#info-modal .modal-body, #info-modal .modal-footer').remove();
+
+				if(html) {
+					$('#info-modal-label').text('{{ text_info_transaction }} ' + show); 
+					$('#info-modal .modal-header').after(html);
+					$('#info-modal').modal('show');
+				}
+			}
+		});	
+		
+		return false;
+	});
+//--></script>
+
+  <script src="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+  <link href="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen" />
+  <script type="text/javascript"><!--
+$('.date').datetimepicker({
+	pickTime: false
+});
+$('.date-modal-to').datetimepicker({
+	pickTime: false,
+	defaultDate: '{{ today_date }}',
+	maxDate: '{{ today_date }}'
+});
+$('.date-modal-from').datetimepicker({
+	pickTime: false,
+	defaultDate: '{{ today_date }}',
+	maxDate: '{{ today_date }}',
+	//minDate: '{{ min_date }}'
+});
+//--></script></div>
+{{ footer }}

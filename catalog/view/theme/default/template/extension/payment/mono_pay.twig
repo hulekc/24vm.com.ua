@@ -1,0 +1,29 @@
+{% if error %}
+{{ error }}
+{% endif %}
+
+{% if payment_url %}
+	<div class="buttons">
+		<div class="pull-right">
+			<form action="{{ payment_url }}" method="get">
+				<input type="submit" value="{{ text_title }}" id="button-confirm" data-loading-text="{{ text_loading }}" class="btn btn-primary" />
+			</form>
+		</div>
+	</div>
+	{% if referrer %}
+	<script>
+		$('#button-confirm').on('click', function() {
+			$.ajax({
+				type: 'get',
+				url: 'index.php?route=extension/payment/mono_pay/referrer',
+				cache: false,
+				success: function() {
+					location = '{{ payment_url }}';
+				}
+			});
+			
+			return false;
+		});
+	</script>
+	{% endif %}
+{% endif %}
